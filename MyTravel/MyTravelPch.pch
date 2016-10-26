@@ -1,0 +1,32 @@
+//
+//  MyTravelPch.pch
+//  MyTravel
+//
+//  Created by ysq on 16/1/3.
+//  Copyright © 2016年 ysq. All rights reserved.
+//
+
+#ifndef MyTravelPch_pch
+
+#define MyTravelPch_pch
+
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "URLHead.h"
+#import "SQProgressHUD.h"
+#import "AttributeSetHeader.h"
+#import "AFNetworking.h"
+#import "Masonry.h"
+#import "YYKit.h"
+#import "NetWorkManager.h"
+#import "SDCycleScrollView.h"
+#import "UIImageView+WebCache.m"
+#import "MJRefresh.h"
+#import "NSString+SQAdd.h"
+#import "YSQHelp.h"
+
+#endif /* MyTravelPch_pch */

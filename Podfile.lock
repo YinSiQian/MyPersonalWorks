@@ -1,0 +1,96 @@
+PODS:
+  - AFNetworking (3.0.4):
+    - AFNetworking/NSURLSession (= 3.0.4)
+    - AFNetworking/Reachability (= 3.0.4)
+    - AFNetworking/Security (= 3.0.4)
+    - AFNetworking/Serialization (= 3.0.4)
+    - AFNetworking/UIKit (= 3.0.4)
+  - AFNetworking/NSURLSession (3.0.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.0.4)
+  - AFNetworking/Security (3.0.4)
+  - AFNetworking/Serialization (3.0.4)
+  - AFNetworking/UIKit (3.0.4):
+    - AFNetworking/NSURLSession
+  - AMap2DMap (4.3.0):
+    - AMapFoundation (~> 1.2)
+  - AMapFoundation (1.3.1)
+  - AMapSearch (4.2.0):
+    - AMapFoundation (~> 1.0)
+  - CocoaAsyncSocket (7.5.0):
+    - CocoaAsyncSocket/GCD (= 7.5.0)
+  - CocoaAsyncSocket/GCD (7.5.0)
+  - FDFullscreenPopGesture (1.1)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - HMSegmentedControl (1.5.3)
+  - JSQMessagesViewController (7.3.4):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - LFLiveKit (2.3)
+  - Masonry (0.6.4)
+  - MJRefresh (3.1.12)
+  - RDVTabBarController (1.1.9)
+  - RealReachability (1.1.8):
+    - RealReachability/Connection (= 1.1.8)
+    - RealReachability/Ping (= 1.1.8)
+  - RealReachability/Connection (1.1.8)
+  - RealReachability/Ping (1.1.8)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SSZipArchive (1.6.2)
+  - UMengSocialCOM (5.2.1)
+  - YYKit (0.9.12):
+    - YYKit/no-arc (= 0.9.12)
+  - YYKit/no-arc (0.9.12)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0.4)
+  - AMap2DMap
+  - AMapSearch
+  - CocoaAsyncSocket (~> 7.5.0)
+  - FDFullscreenPopGesture (= 1.1)
+  - FMDB
+  - HMSegmentedControl (~> 1.5.2)
+  - JSQMessagesViewController (~> 7.3.4)
+  - LFLiveKit (~> 2.3)
+  - Masonry (~> 0.6.4)
+  - MJRefresh (~> 3.1.0)
+  - RDVTabBarController (~> 1.1.9)
+  - RealReachability (~> 1.1.1)
+  - SDCycleScrollView (~> 1.6)
+  - SSZipArchive (~> 1.2)
+  - UMengSocialCOM (~> 5.1)
+  - YYKit (~> 0.9.11)
+
+SPEC CHECKSUMS:
+  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  AMap2DMap: f3f0fc5cdbf0242ff22da0c8605f24f8d7187b35
+  AMapFoundation: 636834a27cd003084f56b4232f3031e6a44c7e7e
+  AMapSearch: 788020fca7ed18819e8bc2bfca716a6775a05ada
+  CocoaAsyncSocket: 3baeb1ddd969f81cf9fca81053ae49ef2d1cbbfa
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
+  JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  LFLiveKit: 76a5cb34509f8cbe25e3a95824cf80f36d36679b
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
+  RealReachability: e6c8a2bbffa316006e8c282efc1ee2567d61a920
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SSZipArchive: 428eb1ac8d37dd133404d30f422b23958c1f9acc
+  UMengSocialCOM: 074c135ce349aa4c8848d3fb8458757bcb6ffb67
+  YYKit: 4c0dfcb4bb3205dfbb172e64ca57a50b1675d545
+
+PODFILE CHECKSUM: fa5362f3d0ecfdc1364c1789da59c7c899869195
+
+COCOAPODS: 1.0.0.beta.4

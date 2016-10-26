@@ -1,0 +1,2233 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D8595557AB277FB682275D2 /* libPods-MyTravel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5222845D6996521B790AFD /* libPods-MyTravel.a */; };
+		F10024F01CDC423300C3D209 /* jpush-ios-2.1.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F10024EE1CDC423300C3D209 /* jpush-ios-2.1.6.a */; };
+		F10024F21CDC426000C3D209 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10024F11CDC426000C3D209 /* CFNetwork.framework */; };
+		F10024F41CDC427500C3D209 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10024F31CDC427500C3D209 /* CoreTelephony.framework */; };
+		F10024F61CDC42FF00C3D209 /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = F10024F51CDC42FF00C3D209 /* PushConfig.plist */; };
+		F10D42D01C3AB16F0026887A /* YSQBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F10D42CE1C3AB16F0026887A /* YSQBannerCell.m */; };
+		F10D42D11C3AB16F0026887A /* YSQBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F10D42CF1C3AB16F0026887A /* YSQBannerCell.xib */; };
+		F10D42D51C3AB9970026887A /* YSQFoundCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F10D42D31C3AB9970026887A /* YSQFoundCell.m */; };
+		F10D42D61C3AB9970026887A /* YSQFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F10D42D41C3AB9970026887A /* YSQFoundCell.xib */; };
+		F10D42DA1C3ABA650026887A /* YSQFoundTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F10D42D81C3ABA650026887A /* YSQFoundTypeCell.m */; };
+		F10D42DB1C3ABA650026887A /* YSQFoundTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F10D42D91C3ABA650026887A /* YSQFoundTypeCell.xib */; };
+		F10D42DF1C3ABBB60026887A /* YSQDiscountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F10D42DD1C3ABBB60026887A /* YSQDiscountCell.m */; };
+		F10D42E01C3ABBB60026887A /* YSQDiscountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F10D42DE1C3ABBB60026887A /* YSQDiscountCell.xib */; };
+		F10DDA301D20A1E6003C30B6 /* YSQShowLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10DDA2F1D20A1E6003C30B6 /* YSQShowLocationViewController.m */; };
+		F10DDA331D20BDB8003C30B6 /* YSQCityMapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F10DDA321D20BDB8003C30B6 /* YSQCityMapModel.m */; };
+		F10DDA361D216975003C30B6 /* YSQScenicSpotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F10DDA351D216975003C30B6 /* YSQScenicSpotCell.m */; };
+		F10DDA391D224A99003C30B6 /* YSQMoreCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10DDA381D224A99003C30B6 /* YSQMoreCategoriesViewController.m */; };
+		F10DDA3C1D224AEE003C30B6 /* YSQCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F10DDA3B1D224AEE003C30B6 /* YSQCategoryModel.m */; };
+		F111AECA1D72EC5500E628CB /* YSQSearchResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F111AEC91D72EC5500E628CB /* YSQSearchResultModel.m */; };
+		F111AECD1D72EF8900E628CB /* YSQSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F111AECC1D72EF8900E628CB /* YSQSearchCell.m */; };
+		F11743541CBF3D500034447F /* YSQAllDiscountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F11743531CBF3D500034447F /* YSQAllDiscountViewController.m */; };
+		F11743571CBF4B0F0034447F /* YSQAllDiscountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F11743561CBF4B0F0034447F /* YSQAllDiscountCell.m */; };
+		F117435A1CBF50F70034447F /* YSQAllDiscountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F11743591CBF50F70034447F /* YSQAllDiscountModel.m */; };
+		F117435D1CBF8DA60034447F /* YSQDiscountOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F117435C1CBF8DA60034447F /* YSQDiscountOrderView.m */; };
+		F1262EBF1D12EF650036ADF5 /* YSQAskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1262EA31D12EF640036ADF5 /* YSQAskModel.m */; };
+		F1262EC01D12EF650036ADF5 /* YSQBBSCountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1262EA51D12EF640036ADF5 /* YSQBBSCountModel.m */; };
+		F1262EC11D12EF650036ADF5 /* YSQCompanyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1262EA71D12EF640036ADF5 /* YSQCompanyModel.m */; };
+		F1262EC21D12EF650036ADF5 /* YSQForumDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1262EA91D12EF640036ADF5 /* YSQForumDetailModel.m */; };
+		F1262EC31D12EF650036ADF5 /* YSQForumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1262EAB1D12EF650036ADF5 /* YSQForumModel.m */; };
+		F1262EC41D12EF650036ADF5 /* YSQGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1262EAD1D12EF650036ADF5 /* YSQGroupModel.m */; };
+		F1262EC51D12EF650036ADF5 /* YSQAskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1262EB01D12EF650036ADF5 /* YSQAskCell.m */; };
+		F1262EC61D12EF650036ADF5 /* YSQAskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1262EB11D12EF650036ADF5 /* YSQAskCell.xib */; };
+		F1262EC71D12EF650036ADF5 /* YSQForumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1262EB31D12EF650036ADF5 /* YSQForumCell.m */; };
+		F1262EC81D12EF650036ADF5 /* YSQForumCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1262EB51D12EF650036ADF5 /* YSQForumCollectionCell.m */; };
+		F1262EC91D12EF650036ADF5 /* YSQForumHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1262EB71D12EF650036ADF5 /* YSQForumHeaderView.m */; };
+		F1262ECA1D12EF650036ADF5 /* YSQNewInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1262EB91D12EF650036ADF5 /* YSQNewInfoCell.m */; };
+		F1262ECB1D12EF650036ADF5 /* YSQTopFlagView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1262EBB1D12EF650036ADF5 /* YSQTopFlagView.m */; };
+		F1262ECC1D12EF650036ADF5 /* YSQTravelGuideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1262EBD1D12EF650036ADF5 /* YSQTravelGuideCell.m */; };
+		F1262ECD1D12EF650036ADF5 /* YSQTravelGuideCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1262EBE1D12EF650036ADF5 /* YSQTravelGuideCell.xib */; };
+		F1262ED01D12F2BA0036ADF5 /* YSQHotBBSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1262ECF1D12F2BA0036ADF5 /* YSQHotBBSCell.m */; };
+		F1338DFE1C85D70900D53A8E /* YSQGreatestChooseController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1338DFD1C85D70900D53A8E /* YSQGreatestChooseController.m */; };
+		F1338E011C85E2BC00D53A8E /* YSQGreatestSelectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1338E001C85E2BC00D53A8E /* YSQGreatestSelectModel.m */; };
+		F1338E041C86789800D53A8E /* YSQGreatestChooseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1338E031C86789800D53A8E /* YSQGreatestChooseCell.m */; };
+		F1338E071C86CB4400D53A8E /* YSQPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1338E061C86CB4400D53A8E /* YSQPlayViewController.m */; };
+		F1338E0A1C86CB7B00D53A8E /* YSQPlayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1338E091C86CB7B00D53A8E /* YSQPlayCell.m */; };
+		F13870E51D0D9F6200F249A1 /* YSQReadBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F13870E41D0D9F6200F249A1 /* YSQReadBookViewController.m */; };
+		F13D604D1CF42574004941B3 /* YSQAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F13D604C1CF42574004941B3 /* YSQAddressCell.m */; };
+		F13D60501CF430A9004941B3 /* YSQHotCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F13D604F1CF430A9004941B3 /* YSQHotCityCell.m */; };
+		F13D60531CF43AEB004941B3 /* YSQHotCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F13D60521CF43AEB004941B3 /* YSQHotCollectionCell.m */; };
+		F13E500C1C673A0C003140CD /* YSQCountryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F13E500B1C673A0C003140CD /* YSQCountryCollectionViewCell.m */; };
+		F13E500F1C675220003140CD /* YSQNormalCountryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F13E500E1C675220003140CD /* YSQNormalCountryCell.m */; };
+		F1454AEF1C8BE891004B1C86 /* YSQHotelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1454AEE1C8BE891004B1C86 /* YSQHotelCell.m */; };
+		F1454AF21C8BF263004B1C86 /* YSQCityHotelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1454AF11C8BF263004B1C86 /* YSQCityHotelModel.m */; };
+		F1454AF51C8BF9E0004B1C86 /* YSQHotelController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1454AF41C8BF9E0004B1C86 /* YSQHotelController.m */; };
+		F145D9F51D7687BC0053DA8D /* NSString+SQAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F145D9F41D7687BC0053DA8D /* NSString+SQAdd.m */; };
+		F145D9F91D768FF20053DA8D /* YSQMallTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F145D9F71D768FF20053DA8D /* YSQMallTopCell.m */; };
+		F145D9FA1D768FF20053DA8D /* YSQMallTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F145D9F81D768FF20053DA8D /* YSQMallTopCell.xib */; };
+		F145D9FE1D769E300053DA8D /* YSQHotAreaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F145D9FC1D769E300053DA8D /* YSQHotAreaCell.m */; };
+		F145D9FF1D769E300053DA8D /* YSQHotAreaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F145D9FD1D769E300053DA8D /* YSQHotAreaCell.xib */; };
+		F145DA021D76A54E0053DA8D /* YSQMallShopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F145DA011D76A54E0053DA8D /* YSQMallShopModel.m */; };
+		F145DA051D76A6550053DA8D /* YSQHotAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F145DA041D76A6550053DA8D /* YSQHotAreaModel.m */; };
+		F145DA081D76A7440053DA8D /* YSQShopDiscountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F145DA071D76A7440053DA8D /* YSQShopDiscountModel.m */; };
+		F145DA0B1D76A8290053DA8D /* YSQMallHotGoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F145DA0A1D76A8290053DA8D /* YSQMallHotGoodsModel.m */; };
+		F145DA0E1D76A88E0053DA8D /* YSQMallMarketModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F145DA0D1D76A88E0053DA8D /* YSQMallMarketModel.m */; };
+		F145DA111D76A8B00053DA8D /* YSQMallListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F145DA101D76A8B00053DA8D /* YSQMallListModel.m */; };
+		F145DA151D76AED90053DA8D /* YSQMarketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F145DA131D76AED90053DA8D /* YSQMarketCell.m */; };
+		F145DA161D76AED90053DA8D /* YSQMarketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F145DA141D76AED90053DA8D /* YSQMarketCell.xib */; };
+		F145DA1A1D76E2910053DA8D /* YSQMallDiscountHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F145DA181D76E2910053DA8D /* YSQMallDiscountHeaderCell.m */; };
+		F145DA1B1D76E2910053DA8D /* YSQMallDiscountHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F145DA191D76E2910053DA8D /* YSQMallDiscountHeaderCell.xib */; };
+		F145DA1F1D76E51D0053DA8D /* YSQMallDiscountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F145DA1D1D76E51D0053DA8D /* YSQMallDiscountCell.m */; };
+		F145DA201D76E51D0053DA8D /* YSQMallDiscountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F145DA1E1D76E51D0053DA8D /* YSQMallDiscountCell.xib */; };
+		F145DA241D76E88D0053DA8D /* YSQMallGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F145DA221D76E88D0053DA8D /* YSQMallGoodsCell.m */; };
+		F145DA251D76E88D0053DA8D /* YSQMallGoodsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F145DA231D76E88D0053DA8D /* YSQMallGoodsCell.xib */; };
+		F145DA2D1D76FB310053DA8D /* YSQMallGoodsSuperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F145DA2C1D76FB310053DA8D /* YSQMallGoodsSuperCell.m */; };
+		F14C85141DB10CEB0001ED13 /* YSQChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14C85131DB10CEB0001ED13 /* YSQChatViewController.m */; };
+		F14C85171DB122500001ED13 /* YSQSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F14C85161DB122500001ED13 /* YSQSocket.m */; };
+		F14E5FBA1C883ACB00C212B2 /* YSQLocationHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F14E5FB91C883ACB00C212B2 /* YSQLocationHeaderView.m */; };
+		F1506D2E1C5E5A1200335BF6 /* YSQCountryDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F1506D291C5E5A1200335BF6 /* YSQCountryDetail.m */; };
+		F1506D2F1C5E5A1200335BF6 /* YSQHotCity.m in Sources */ = {isa = PBXBuildFile; fileRef = F1506D2B1C5E5A1200335BF6 /* YSQHotCity.m */; };
+		F1506D301C5E5A1200335BF6 /* YSQNewDiscount.m in Sources */ = {isa = PBXBuildFile; fileRef = F1506D2D1C5E5A1200335BF6 /* YSQNewDiscount.m */; };
+		F150B97E1C8E8B630054E975 /* YSQMineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F150B97D1C8E8B630054E975 /* YSQMineViewController.storyboard */; };
+		F150B9811C8E91CD0054E975 /* YSQMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = F150B9801C8E91CD0054E975 /* YSQMineController.m */; };
+		F15603731D1034FC00C7E70B /* YSQHTMLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F15603721D1034FC00C7E70B /* YSQHTMLModel.m */; };
+		F15603791D103BAB00C7E70B /* YSQBookCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = F15603781D103BAB00C7E70B /* YSQBookCoverView.m */; };
+		F156037C1D103F1B00C7E70B /* YSQBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F156037B1D103F1B00C7E70B /* YSQBookCell.m */; };
+		F156037F1D10F94E00C7E70B /* YSQBookListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F156037E1D10F94E00C7E70B /* YSQBookListViewController.m */; };
+		F1624E3C1CC8C01600E274F0 /* YSQCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1624E3B1CC8C01600E274F0 /* YSQCollectionHeaderView.m */; };
+		F164830E1CCF12CB002E7017 /* YSQKitsReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F164830D1CCF12CB002E7017 /* YSQKitsReusableView.m */; };
+		F16483111CCF3FF0002E7017 /* YSQStrategyDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = F16483101CCF3FF0002E7017 /* YSQStrategyDetailController.m */; };
+		F16483141CCF41AC002E7017 /* YSQKitsDetailHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F16483131CCF41AC002E7017 /* YSQKitsDetailHeaderView.m */; };
+		F16483171CCF444F002E7017 /* YSQAuthorInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F16483161CCF444F002E7017 /* YSQAuthorInfoCell.m */; };
+		F164831A1CCF46EF002E7017 /* YSQRelatedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F16483191CCF46EF002E7017 /* YSQRelatedCell.m */; };
+		F164831D1CCF4BBC002E7017 /* YSQKitsIntroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F164831C1CCF4BBC002E7017 /* YSQKitsIntroCell.m */; };
+		F16483201CCF4F41002E7017 /* YSQKitsDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F164831F1CCF4F41002E7017 /* YSQKitsDetailModel.m */; };
+		F164C1521CA3B40F0065FCCF /* YSQFreedomController.m in Sources */ = {isa = PBXBuildFile; fileRef = F164C1511CA3B40F0065FCCF /* YSQFreedomController.m */; };
+		F165A54D1C3D452B00B0AF69 /* YSQNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F165A54C1C3D452B00B0AF69 /* YSQNavgationController.m */; };
+		F165A5511C3D4DFD00B0AF69 /* YSQHotNotesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F165A54F1C3D4DFD00B0AF69 /* YSQHotNotesCell.m */; };
+		F165A5551C3D576E00B0AF69 /* YSQRecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F165A5541C3D576E00B0AF69 /* YSQRecommendModel.m */; };
+		F165A5581C3D579B00B0AF69 /* YSQDiscountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F165A5571C3D579B00B0AF69 /* YSQDiscountModel.m */; };
+		F165A55B1C3D57D200B0AF69 /* YSQSlideModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F165A55A1C3D57D200B0AF69 /* YSQSlideModel.m */; };
+		F165A55E1C3D57FC00B0AF69 /* YSQSubjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F165A55D1C3D57FC00B0AF69 /* YSQSubjectModel.m */; };
+		F165A5611C3D582D00B0AF69 /* YSQHotNotesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F165A5601C3D582D00B0AF69 /* YSQHotNotesModel.m */; };
+		F168A91A1C379C0300CBC9CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F168A9191C379C0300CBC9CA /* main.m */; };
+		F168A91D1C379C0300CBC9CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F168A91C1C379C0300CBC9CA /* AppDelegate.m */; };
+		F168A9331C379C0300CBC9CA /* MyTravelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F168A9321C379C0300CBC9CA /* MyTravelTests.m */; };
+		F168A93E1C379C0300CBC9CA /* MyTravelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F168A93D1C379C0300CBC9CA /* MyTravelUITests.m */; };
+		F168A9FC1C395E8900CBC9CA /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F168A9F91C395E8900CBC9CA /* AFAppDotNetAPIClient.m */; };
+		F168A9FD1C395E8900CBC9CA /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F168A9FB1C395E8900CBC9CA /* NetWorkManager.m */; };
+		F168AA021C396AB900CBC9CA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F168AA011C396AB900CBC9CA /* MainViewController.m */; };
+		F168AA051C396B2400CBC9CA /* DestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F168AA041C396B2400CBC9CA /* DestinationViewController.m */; };
+		F168AA081C396B3300CBC9CA /* BBSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F168AA071C396B3300CBC9CA /* BBSViewController.m */; };
+		F168AA0B1C396B6D00CBC9CA /* RecomendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F168AA0A1C396B6D00CBC9CA /* RecomendViewController.m */; };
+		F17F61581D14DDCB00F71405 /* YSQHotBBSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17F61571D14DDCB00F71405 /* YSQHotBBSViewController.m */; };
+		F17F615B1D14E6AA00F71405 /* YSQSearchFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17F615A1D14E6AA00F71405 /* YSQSearchFriendsViewController.m */; };
+		F17F615E1D14F47600F71405 /* YSQBBSContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17F615D1D14F47600F71405 /* YSQBBSContentViewController.m */; };
+		F17F61611D15538800F71405 /* YSQHotBBSOtherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F17F61601D15538800F71405 /* YSQHotBBSOtherCell.m */; };
+		F17F7E4D1DA2B9120082651A /* YSQCustomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F17F7E4C1DA2B9120082651A /* YSQCustomTableView.m */; };
+		F1834CBD1CF41D26005E086F /* YSQAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1834CBC1CF41D26005E086F /* YSQAddressViewController.m */; };
+		F1834CC01CF41DB3005E086F /* YSQAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1834CBF1CF41DB3005E086F /* YSQAddressModel.m */; };
+		F1885B531CFD208000ECF430 /* YSQUserCollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1885B521CFD208000ECF430 /* YSQUserCollectViewController.m */; };
+		F1885B561CFD866F00ECF430 /* YSQUserDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = F1885B551CFD866F00ECF430 /* YSQUserDAO.m */; };
+		F189E2521CA4FE800036488B /* YSQTitleHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F189E2511CA4FE800036488B /* YSQTitleHeaderView.m */; };
+		F189E2551CA501CC0036488B /* YSQFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F189E2541CA501CC0036488B /* YSQFooterView.m */; };
+		F189E2581CA521070036488B /* YSQAllFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F189E2571CA521070036488B /* YSQAllFoundViewController.m */; };
+		F189E25B1CA5309A0036488B /* SQProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F189E25A1CA5309A0036488B /* SQProgressHUD.m */; };
+		F18E4AB01DA605DA00EFD4E9 /* YSQLiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18E4AAF1DA605DA00EFD4E9 /* YSQLiveController.m */; };
+		F18E4AB31DA6062600EFD4E9 /* YSQLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F18E4AB21DA6062600EFD4E9 /* YSQLiveCell.m */; };
+		F18E4AB61DA60E6100EFD4E9 /* UIImageView+YSQAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F18E4AB51DA60E6100EFD4E9 /* UIImageView+YSQAdd.m */; };
+		F194081E1C896CE100A9BDB3 /* FastCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F19408191C896CE100A9BDB3 /* FastCoder.m */; };
+		F19408201C896CE100A9BDB3 /* YSQLocationStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F194081D1C896CE100A9BDB3 /* YSQLocationStore.m */; };
+		F19408231C896D8500A9BDB3 /* NSObject+YSQStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F19408221C896D8500A9BDB3 /* NSObject+YSQStore.m */; };
+		F19408261C89867F00A9BDB3 /* YSQForumDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19408251C89867F00A9BDB3 /* YSQForumDetailController.m */; };
+		F195930B1C4FD77400DFDE31 /* YSQHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = F195930A1C4FD77400DFDE31 /* YSQHelp.m */; };
+		F19E865D1D13CA6500A4DB78 /* YSQHotBBSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F19E865C1D13CA6500A4DB78 /* YSQHotBBSModel.m */; };
+		F19E86601D140DDE00A4DB78 /* YSQBBSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F19E865F1D140DDE00A4DB78 /* YSQBBSCell.m */; };
+		F19E86691D14342D00A4DB78 /* YSQSearchFriendsCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F19E86671D14342D00A4DB78 /* YSQSearchFriendsCellTableViewCell.m */; };
+		F19E866A1D14342D00A4DB78 /* YSQSearchFriendsCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F19E86681D14342D00A4DB78 /* YSQSearchFriendsCellTableViewCell.xib */; };
+		F19EB3341C6D71A400EC40C9 /* YSQCityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EB3331C6D71A400EC40C9 /* YSQCityDetailViewController.m */; };
+		F19EB3381C6D725800EC40C9 /* YSQCityLocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EB3361C6D725800EC40C9 /* YSQCityLocationCell.m */; };
+		F19EB3391C6D725800EC40C9 /* YSQCityLocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F19EB3371C6D725800EC40C9 /* YSQCityLocationCell.xib */; };
+		F19EB33C1C6D7B8400EC40C9 /* YSQHotelChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EB33B1C6D7B8400EC40C9 /* YSQHotelChooseView.m */; };
+		F19EB33E1C6D7BB100EC40C9 /* YSQHotelChooseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F19EB33D1C6D7BB100EC40C9 /* YSQHotelChooseView.xib */; };
+		F1A121E21CCE54C4006606F2 /* YSQStrategyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A121E11CCE54C4006606F2 /* YSQStrategyViewController.m */; };
+		F1A121E61CCE56E5006606F2 /* XLPlainFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A121E51CCE56E5006606F2 /* XLPlainFlowLayout.m */; };
+		F1A121E91CCE6E53006606F2 /* YSQKitsTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A121E81CCE6E53006606F2 /* YSQKitsTypeModel.m */; };
+		F1A121EC1CCF064C006606F2 /* YSQKitsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A121EB1CCF064C006606F2 /* YSQKitsModel.m */; };
+		F1A121EF1CCF0CE6006606F2 /* YSQKitsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A121EE1CCF0CE6006606F2 /* YSQKitsCell.m */; };
+		F1A134611C525ED5005E1A38 /* YSQWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A134601C525ED5005E1A38 /* YSQWebViewController.m */; };
+		F1A1AB4E1CD4BC9100B4D496 /* YSQBaseForumController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A1AB4D1CD4BC9100B4D496 /* YSQBaseForumController.m */; };
+		F1A64DE51C86E29600E8C70D /* YSQPlayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A64DE41C86E29600E8C70D /* YSQPlayModel.m */; };
+		F1A64DE81C86EBC600E8C70D /* YSQPlayDiscountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A64DE71C86EBC600E8C70D /* YSQPlayDiscountModel.m */; };
+		F1A98CCF1DC0CF5200534B15 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CBF1DC0CF5200534B15 /* libAFNetworking.a */; };
+		F1A98CD01DC0CF5200534B15 /* libCocoaAsyncSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC01DC0CF5200534B15 /* libCocoaAsyncSocket.a */; };
+		F1A98CD11DC0CF5200534B15 /* libFDFullscreenPopGesture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC11DC0CF5200534B15 /* libFDFullscreenPopGesture.a */; };
+		F1A98CD21DC0CF5200534B15 /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC21DC0CF5200534B15 /* libFMDB.a */; };
+		F1A98CD31DC0CF5200534B15 /* libHMSegmentedControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC31DC0CF5200534B15 /* libHMSegmentedControl.a */; };
+		F1A98CD41DC0CF5200534B15 /* libJSQMessagesViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC41DC0CF5200534B15 /* libJSQMessagesViewController.a */; };
+		F1A98CD51DC0CF5200534B15 /* libJSQSystemSoundPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC51DC0CF5200534B15 /* libJSQSystemSoundPlayer.a */; };
+		F1A98CD61DC0CF5200534B15 /* libLFLiveKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC61DC0CF5200534B15 /* libLFLiveKit.a */; };
+		F1A98CD71DC0CF5200534B15 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC71DC0CF5200534B15 /* libMasonry.a */; };
+		F1A98CD81DC0CF5200534B15 /* libMJRefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC81DC0CF5200534B15 /* libMJRefresh.a */; };
+		F1A98CD91DC0CF5200534B15 /* libRDVTabBarController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC91DC0CF5200534B15 /* libRDVTabBarController.a */; };
+		F1A98CDA1DC0CF5200534B15 /* libRealReachability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CCA1DC0CF5200534B15 /* libRealReachability.a */; };
+		F1A98CDB1DC0CF5200534B15 /* libSDCycleScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CCB1DC0CF5200534B15 /* libSDCycleScrollView.a */; };
+		F1A98CDC1DC0CF5200534B15 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CCC1DC0CF5200534B15 /* libSDWebImage.a */; };
+		F1A98CDD1DC0CF5200534B15 /* libSSZipArchive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CCD1DC0CF5200534B15 /* libSSZipArchive.a */; };
+		F1A98CDE1DC0CF5200534B15 /* libYYKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CCE1DC0CF5200534B15 /* libYYKit.a */; };
+		F1B086401CA2CDBF00A33285 /* YSQAllCityController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0863F1CA2CDBF00A33285 /* YSQAllCityController.m */; };
+		F1B086431CA2CE1600A33285 /* YSQAllCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B086421CA2CE1600A33285 /* YSQAllCityCell.m */; };
+		F1B086461CA2D62E00A33285 /* YSQAllCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B086451CA2D62E00A33285 /* YSQAllCityModel.m */; };
+		F1B1E5EB1C8C77750097913F /* YSQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B1E5EA1C8C77750097913F /* YSQTabBarController.m */; };
+		F1B20EE51D4E5CA400F98E02 /* NSObject+YSQCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B20EE41D4E5CA400F98E02 /* NSObject+YSQCache.m */; };
+		F1BBC00D1CDBA096006EF24B /* YSQHotelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BBC00C1CDBA096006EF24B /* YSQHotelViewController.m */; };
+		F1BC59751CE9CC9600628C35 /* YSQLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BC59731CE9CC9600628C35 /* YSQLoginViewController.m */; };
+		F1BC59761CE9CC9600628C35 /* YSQLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1BC59741CE9CC9600628C35 /* YSQLoginViewController.xib */; };
+		F1BC597A1CE9DA3D00628C35 /* YSQRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BC59781CE9DA3D00628C35 /* YSQRegisterViewController.m */; };
+		F1BC597B1CE9DA3D00628C35 /* YSQRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1BC59791CE9DA3D00628C35 /* YSQRegisterViewController.xib */; };
+		F1BEB5771DA4D6AB007CB977 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BEB5761DA4D6AB007CB977 /* IJKMediaFramework.framework */; };
+		F1BEB5791DA4D799007CB977 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BEB5781DA4D799007CB977 /* VideoToolbox.framework */; };
+		F1BEB57B1DA4D7AA007CB977 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BEB57A1DA4D7AA007CB977 /* OpenGLES.framework */; };
+		F1BEB57D1DA4D7B3007CB977 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BEB57C1DA4D7B3007CB977 /* MobileCoreServices.framework */; };
+		F1BEB57F1DA4D7BC007CB977 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BEB57E1DA4D7BC007CB977 /* MediaPlayer.framework */; };
+		F1BEB5811DA4D7CC007CB977 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BEB5801DA4D7CC007CB977 /* libz.tbd */; };
+		F1BEB5831DA4D7D5007CB977 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BEB5821DA4D7D5007CB977 /* libbz2.tbd */; };
+		F1BEB5851DA4D7DC007CB977 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BEB5841DA4D7DC007CB977 /* CoreVideo.framework */; };
+		F1BEB5871DA4D7E6007CB977 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BEB5861DA4D7E6007CB977 /* CoreMedia.framework */; };
+		F1BEB5891DA4D7ED007CB977 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BEB5881DA4D7ED007CB977 /* AVFoundation.framework */; };
+		F1BEB58B1DA4D7F3007CB977 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BEB58A1DA4D7F3007CB977 /* AudioToolbox.framework */; };
+		F1BEB5971DA4DD51007CB977 /* YSQLiveListControllerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BEB5961DA4DD51007CB977 /* YSQLiveListControllerController.m */; };
+		F1BEB59A1DA4DDCF007CB977 /* YSQLiveItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BEB5991DA4DDCF007CB977 /* YSQLiveItem.m */; };
+		F1BEB59D1DA4DEA2007CB977 /* YSQCreatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BEB59C1DA4DEA2007CB977 /* YSQCreatorItem.m */; };
+		F1BEB5A11DA4DFE0007CB977 /* YZLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BEB59F1DA4DFE0007CB977 /* YZLiveCell.m */; };
+		F1BEB5A21DA4DFE0007CB977 /* YZLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1BEB5A01DA4DFE0007CB977 /* YZLiveCell.xib */; };
+		F1BECA701DA62F2A00804736 /* YSQShowYourselfController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BECA6E1DA62F2A00804736 /* YSQShowYourselfController.m */; };
+		F1BECA711DA62F2A00804736 /* YSQShowYourselfController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1BECA6F1DA62F2A00804736 /* YSQShowYourselfController.xib */; };
+		F1BECA731DA631FE00804736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1BECA721DA631FE00804736 /* Assets.xcassets */; };
+		F1BFD2C21C66F81900F96FC3 /* YSQCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BFD2C11C66F81900F96FC3 /* YSQCountry.m */; };
+		F1CC1E491D6F421B005BE04E /* YSQSearchHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CC1E481D6F421B005BE04E /* YSQSearchHeadView.m */; };
+		F1D233801CBE444800418312 /* YSQSelectOverseasController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D2337F1CBE444800418312 /* YSQSelectOverseasController.m */; };
+		F1D9B8F21C562B6200C3C043 /* YSQBaseControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D9B8F11C562B6200C3C043 /* YSQBaseControllerView.m */; };
+		F1D9B8F51C562FC800C3C043 /* YSQDistinctViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D9B8F41C562FC800C3C043 /* YSQDistinctViewController.m */; };
+		F1E06C631CFBF1CE008AD4C1 /* YSQFeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E06C621CFBF1CE008AD4C1 /* YSQFeedBackViewController.m */; };
+		F1E2F1A01CC07DC500374E55 /* YSQDiscountChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E2F19F1CC07DC500374E55 /* YSQDiscountChooseView.m */; };
+		F1E2F1A31CC083C500374E55 /* YSQSegmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E2F1A21CC083C500374E55 /* YSQSegmentCell.m */; };
+		F1E2F1A61CC0BBED00374E55 /* YSQChooseTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E2F1A51CC0BBED00374E55 /* YSQChooseTypeModel.m */; };
+		F1ECA6201C6449CE00A6DC6D /* YSQTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECA61F1C6449CE00A6DC6D /* YSQTableViewHeaderFooterView.m */; };
+		F1ECA6261C648EF800A6DC6D /* YSQCommonHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECA6251C648EF800A6DC6D /* YSQCommonHeaderCell.m */; };
+		F1ECA6291C6498B500A6DC6D /* YSQFreedomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECA6281C6498B500A6DC6D /* YSQFreedomCell.m */; };
+		F1EEFF6D1C95413600C13F05 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EEFF6C1C95413600C13F05 /* YYFPSLabel.m */; };
+		F1F4D6BE1CA406FB00E58AE5 /* YSQFreeChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F4D6BD1CA406FB00E58AE5 /* YSQFreeChildViewController.m */; };
+		F1F5F6CF1D6EF3D900CCAB3F /* YSQShopController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F5F6CE1D6EF3D900CCAB3F /* YSQShopController.m */; };
+		F1F5F6D31D6EFE5F00CCAB3F /* YSQSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F5F6D21D6EFE5F00CCAB3F /* YSQSearchController.m */; };
+		F1F5F6D71D6F165F00CCAB3F /* YSQTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F5F6D61D6F165F00CCAB3F /* YSQTagView.m */; };
+		F1F696AF1CC7C90600DBDE4A /* YSQCityChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F696AE1CC7C90600DBDE4A /* YSQCityChooseView.m */; };
+		F1FD908B1C64F85E008BD6EF /* YSQLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FD908A1C64F85E008BD6EF /* YSQLabelView.m */; };
+		F1FD90901C6503A0008BD6EF /* YSQContinent.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FD908F1C6503A0008BD6EF /* YSQContinent.m */; };
+		F1FEF5621CF985880074C0A7 /* YSQMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FEF5611CF985880074C0A7 /* YSQMineHeaderView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F168A92F1C379C0300CBC9CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F168A90D1C379C0300CBC9CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F168A9141C379C0300CBC9CA;
+			remoteInfo = MyTravel;
+		};
+		F168A93A1C379C0300CBC9CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F168A90D1C379C0300CBC9CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F168A9141C379C0300CBC9CA;
+			remoteInfo = MyTravel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BE42A129C0B2936FA4413E6 /* Pods-MyTravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTravel.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTravel/Pods-MyTravel.release.xcconfig"; sourceTree = "<group>"; };
+		4F23A080CADAB25CA85D2C95 /* Pods-MyTravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTravel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTravel/Pods-MyTravel.debug.xcconfig"; sourceTree = "<group>"; };
+		DD5222845D6996521B790AFD /* libPods-MyTravel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyTravel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F10024EE1CDC423300C3D209 /* jpush-ios-2.1.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-2.1.6.a"; sourceTree = "<group>"; };
+		F10024EF1CDC423300C3D209 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		F10024F11CDC426000C3D209 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F10024F31CDC427500C3D209 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F10024F51CDC42FF00C3D209 /* PushConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PushConfig.plist; sourceTree = "<group>"; };
+		F10D42C21C3AAB0A0026887A /* URLHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLHead.h; sourceTree = "<group>"; };
+		F10D42CD1C3AB16F0026887A /* YSQBannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQBannerCell.h; sourceTree = "<group>"; };
+		F10D42CE1C3AB16F0026887A /* YSQBannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQBannerCell.m; sourceTree = "<group>"; };
+		F10D42CF1C3AB16F0026887A /* YSQBannerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSQBannerCell.xib; sourceTree = "<group>"; };
+		F10D42D21C3AB9970026887A /* YSQFoundCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQFoundCell.h; sourceTree = "<group>"; };
+		F10D42D31C3AB9970026887A /* YSQFoundCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQFoundCell.m; sourceTree = "<group>"; };
+		F10D42D41C3AB9970026887A /* YSQFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSQFoundCell.xib; sourceTree = "<group>"; };
+		F10D42D71C3ABA650026887A /* YSQFoundTypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQFoundTypeCell.h; sourceTree = "<group>"; };
+		F10D42D81C3ABA650026887A /* YSQFoundTypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQFoundTypeCell.m; sourceTree = "<group>"; };
+		F10D42D91C3ABA650026887A /* YSQFoundTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSQFoundTypeCell.xib; sourceTree = "<group>"; };
+		F10D42DC1C3ABBB60026887A /* YSQDiscountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQDiscountCell.h; sourceTree = "<group>"; };
+		F10D42DD1C3ABBB60026887A /* YSQDiscountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQDiscountCell.m; sourceTree = "<group>"; };
+		F10D42DE1C3ABBB60026887A /* YSQDiscountCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSQDiscountCell.xib; sourceTree = "<group>"; };
+		F10DDA2E1D20A1E6003C30B6 /* YSQShowLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQShowLocationViewController.h; sourceTree = "<group>"; };
+		F10DDA2F1D20A1E6003C30B6 /* YSQShowLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQShowLocationViewController.m; sourceTree = "<group>"; };
+		F10DDA311D20BDB8003C30B6 /* YSQCityMapModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQCityMapModel.h; sourceTree = "<group>"; };
+		F10DDA321D20BDB8003C30B6 /* YSQCityMapModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQCityMapModel.m; sourceTree = "<group>"; };
+		F10DDA341D216975003C30B6 /* YSQScenicSpotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQScenicSpotCell.h; sourceTree = "<group>"; };
+		F10DDA351D216975003C30B6 /* YSQScenicSpotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQScenicSpotCell.m; sourceTree = "<group>"; };
+		F10DDA371D224A99003C30B6 /* YSQMoreCategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQMoreCategoriesViewController.h; sourceTree = "<group>"; };
+		F10DDA381D224A99003C30B6 /* YSQMoreCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQMoreCategoriesViewController.m; sourceTree = "<group>"; };
+		F10DDA3A1D224AEE003C30B6 /* YSQCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQCategoryModel.h; sourceTree = "<group>"; };
+		F10DDA3B1D224AEE003C30B6 /* YSQCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQCategoryModel.m; sourceTree = "<group>"; };
+		F111AEC81D72EC5500E628CB /* YSQSearchResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQSearchResultModel.h; sourceTree = "<group>"; };
+		F111AEC91D72EC5500E628CB /* YSQSearchResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQSearchResultModel.m; sourceTree = "<group>"; };
+		F111AECB1D72EF8900E628CB /* YSQSearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQSearchCell.h; sourceTree = "<group>"; };
+		F111AECC1D72EF8900E628CB /* YSQSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQSearchCell.m; sourceTree = "<group>"; };
+		F11743521CBF3D500034447F /* YSQAllDiscountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQAllDiscountViewController.h; sourceTree = "<group>"; };
+		F11743531CBF3D500034447F /* YSQAllDiscountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQAllDiscountViewController.m; sourceTree = "<group>"; };
+		F11743551CBF4B0F0034447F /* YSQAllDiscountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQAllDiscountCell.h; sourceTree = "<group>"; };
+		F11743561CBF4B0F0034447F /* YSQAllDiscountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQAllDiscountCell.m; sourceTree = "<group>"; };
+		F11743581CBF50F70034447F /* YSQAllDiscountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQAllDiscountModel.h; sourceTree = "<group>"; };
+		F11743591CBF50F70034447F /* YSQAllDiscountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQAllDiscountModel.m; sourceTree = "<group>"; };
+		F117435B1CBF8DA60034447F /* YSQDiscountOrderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQDiscountOrderView.h; sourceTree = "<group>"; };
+		F117435C1CBF8DA60034447F /* YSQDiscountOrderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQDiscountOrderView.m; sourceTree = "<group>"; };
+		F1262EA21D12EF640036ADF5 /* YSQAskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQAskModel.h; sourceTree = "<group>"; };
+		F1262EA31D12EF640036ADF5 /* YSQAskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQAskModel.m; sourceTree = "<group>"; };
+		F1262EA41D12EF640036ADF5 /* YSQBBSCountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQBBSCountModel.h; sourceTree = "<group>"; };
+		F1262EA51D12EF640036ADF5 /* YSQBBSCountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQBBSCountModel.m; sourceTree = "<group>"; };
+		F1262EA61D12EF640036ADF5 /* YSQCompanyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQCompanyModel.h; sourceTree = "<group>"; };
+		F1262EA71D12EF640036ADF5 /* YSQCompanyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQCompanyModel.m; sourceTree = "<group>"; };
+		F1262EA81D12EF640036ADF5 /* YSQForumDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQForumDetailModel.h; sourceTree = "<group>"; };
+		F1262EA91D12EF640036ADF5 /* YSQForumDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQForumDetailModel.m; sourceTree = "<group>"; };
+		F1262EAA1D12EF650036ADF5 /* YSQForumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQForumModel.h; sourceTree = "<group>"; };
+		F1262EAB1D12EF650036ADF5 /* YSQForumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQForumModel.m; sourceTree = "<group>"; };
+		F1262EAC1D12EF650036ADF5 /* YSQGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQGroupModel.h; sourceTree = "<group>"; };
+		F1262EAD1D12EF650036ADF5 /* YSQGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQGroupModel.m; sourceTree = "<group>"; };
+		F1262EAF1D12EF650036ADF5 /* YSQAskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQAskCell.h; sourceTree = "<group>"; };
+		F1262EB01D12EF650036ADF5 /* YSQAskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQAskCell.m; sourceTree = "<group>"; };
+		F1262EB11D12EF650036ADF5 /* YSQAskCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSQAskCell.xib; sourceTree = "<group>"; };
+		F1262EB21D12EF650036ADF5 /* YSQForumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQForumCell.h; sourceTree = "<group>"; };
+		F1262EB31D12EF650036ADF5 /* YSQForumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQForumCell.m; sourceTree = "<group>"; };
+		F1262EB41D12EF650036ADF5 /* YSQForumCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQForumCollectionCell.h; sourceTree = "<group>"; };
+		F1262EB51D12EF650036ADF5 /* YSQForumCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQForumCollectionCell.m; sourceTree = "<group>"; };
+		F1262EB61D12EF650036ADF5 /* YSQForumHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQForumHeaderView.h; sourceTree = "<group>"; };
+		F1262EB71D12EF650036ADF5 /* YSQForumHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQForumHeaderView.m; sourceTree = "<group>"; };
+		F1262EB81D12EF650036ADF5 /* YSQNewInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQNewInfoCell.h; sourceTree = "<group>"; };
+		F1262EB91D12EF650036ADF5 /* YSQNewInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQNewInfoCell.m; sourceTree = "<group>"; };
+		F1262EBA1D12EF650036ADF5 /* YSQTopFlagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQTopFlagView.h; sourceTree = "<group>"; };
+		F1262EBB1D12EF650036ADF5 /* YSQTopFlagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQTopFlagView.m; sourceTree = "<group>"; };
+		F1262EBC1D12EF650036ADF5 /* YSQTravelGuideCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQTravelGuideCell.h; sourceTree = "<group>"; };
+		F1262EBD1D12EF650036ADF5 /* YSQTravelGuideCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQTravelGuideCell.m; sourceTree = "<group>"; };
+		F1262EBE1D12EF650036ADF5 /* YSQTravelGuideCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSQTravelGuideCell.xib; sourceTree = "<group>"; };
+		F1262ECE1D12F2BA0036ADF5 /* YSQHotBBSCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQHotBBSCell.h; sourceTree = "<group>"; };
+		F1262ECF1D12F2BA0036ADF5 /* YSQHotBBSCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQHotBBSCell.m; sourceTree = "<group>"; };
+		F1338DFC1C85D70900D53A8E /* YSQGreatestChooseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQGreatestChooseController.h; sourceTree = "<group>"; };
+		F1338DFD1C85D70900D53A8E /* YSQGreatestChooseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQGreatestChooseController.m; sourceTree = "<group>"; };
+		F1338DFF1C85E2BC00D53A8E /* YSQGreatestSelectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQGreatestSelectModel.h; sourceTree = "<group>"; };
+		F1338E001C85E2BC00D53A8E /* YSQGreatestSelectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQGreatestSelectModel.m; sourceTree = "<group>"; };
+		F1338E021C86789800D53A8E /* YSQGreatestChooseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQGreatestChooseCell.h; sourceTree = "<group>"; };
+		F1338E031C86789800D53A8E /* YSQGreatestChooseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQGreatestChooseCell.m; sourceTree = "<group>"; };
+		F1338E051C86CB4400D53A8E /* YSQPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQPlayViewController.h; sourceTree = "<group>"; };
+		F1338E061C86CB4400D53A8E /* YSQPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQPlayViewController.m; sourceTree = "<group>"; };
+		F1338E081C86CB7B00D53A8E /* YSQPlayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQPlayCell.h; sourceTree = "<group>"; };
+		F1338E091C86CB7B00D53A8E /* YSQPlayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQPlayCell.m; sourceTree = "<group>"; };
+		F13870E31D0D9F6200F249A1 /* YSQReadBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSQReadBookViewController.h; path = ../YSQReadBookViewController.h; sourceTree = "<group>"; };
+		F13870E41D0D9F6200F249A1 /* YSQReadBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YSQReadBookViewController.m; path = ../YSQReadBookViewController.m; sourceTree = "<group>"; };
+		F13D604B1CF42574004941B3 /* YSQAddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQAddressCell.h; sourceTree = "<group>"; };
+		F13D604C1CF42574004941B3 /* YSQAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQAddressCell.m; sourceTree = "<group>"; };
+		F13D604E1CF430A9004941B3 /* YSQHotCityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQHotCityCell.h; sourceTree = "<group>"; };
+		F13D604F1CF430A9004941B3 /* YSQHotCityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQHotCityCell.m; sourceTree = "<group>"; };
+		F13D60511CF43AEB004941B3 /* YSQHotCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQHotCollectionCell.h; sourceTree = "<group>"; };
+		F13D60521CF43AEB004941B3 /* YSQHotCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQHotCollectionCell.m; sourceTree = "<group>"; };
+		F13E500A1C673A0C003140CD /* YSQCountryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQCountryCollectionViewCell.h; sourceTree = "<group>"; };
+		F13E500B1C673A0C003140CD /* YSQCountryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQCountryCollectionViewCell.m; sourceTree = "<group>"; };
+		F13E500D1C675220003140CD /* YSQNormalCountryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQNormalCountryCell.h; sourceTree = "<group>"; };
+		F13E500E1C675220003140CD /* YSQNormalCountryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQNormalCountryCell.m; sourceTree = "<group>"; };
+		F1454AED1C8BE891004B1C86 /* YSQHotelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQHotelCell.h; sourceTree = "<group>"; };
+		F1454AEE1C8BE891004B1C86 /* YSQHotelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQHotelCell.m; sourceTree = "<group>"; };
+		F1454AF01C8BF263004B1C86 /* YSQCityHotelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQCityHotelModel.h; sourceTree = "<group>"; };
+		F1454AF11C8BF263004B1C86 /* YSQCityHotelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQCityHotelModel.m; sourceTree = "<group>"; };
+		F1454AF31C8BF9E0004B1C86 /* YSQHotelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQHotelController.h; sourceTree = "<group>"; };
+		F1454AF41C8BF9E0004B1C86 /* YSQHotelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQHotelController.m; sourceTree = "<group>"; };
+		F145D9F31D7687BC0053DA8D /* NSString+SQAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SQAdd.h"; sourceTree = "<group>"; };
+		F145D9F41D7687BC0053DA8D /* NSString+SQAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SQAdd.m"; sourceTree = "<group>"; };
+		F145D9F61D768FF20053DA8D /* YSQMallTopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQMallTopCell.h; sourceTree = "<group>"; };
+		F145D9F71D768FF20053DA8D /* YSQMallTopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQMallTopCell.m; sourceTree = "<group>"; };
+		F145D9F81D768FF20053DA8D /* YSQMallTopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSQMallTopCell.xib; sourceTree = "<group>"; };
+		F145D9FB1D769E300053DA8D /* YSQHotAreaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQHotAreaCell.h; sourceTree = "<group>"; };
+		F145D9FC1D769E300053DA8D /* YSQHotAreaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQHotAreaCell.m; sourceTree = "<group>"; };
+		F145D9FD1D769E300053DA8D /* YSQHotAreaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSQHotAreaCell.xib; sourceTree = "<group>"; };
+		F145DA001D76A54E0053DA8D /* YSQMallShopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQMallShopModel.h; sourceTree = "<group>"; };
+		F145DA011D76A54E0053DA8D /* YSQMallShopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQMallShopModel.m; sourceTree = "<group>"; };
+		F145DA031D76A6550053DA8D /* YSQHotAreaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQHotAreaModel.h; sourceTree = "<group>"; };
+		F145DA041D76A6550053DA8D /* YSQHotAreaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQHotAreaModel.m; sourceTree = "<group>"; };
+		F145DA061D76A7440053DA8D /* YSQShopDiscountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQShopDiscountModel.h; sourceTree = "<group>"; };
+		F145DA071D76A7440053DA8D /* YSQShopDiscountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQShopDiscountModel.m; sourceTree = "<group>"; };
+		F145DA091D76A8290053DA8D /* YSQMallHotGoodsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQMallHotGoodsModel.h; sourceTree = "<group>"; };
+		F145DA0A1D76A8290053DA8D /* YSQMallHotGoodsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQMallHotGoodsModel.m; sourceTree = "<group>"; };
+		F145DA0C1D76A88E0053DA8D /* YSQMallMarketModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQMallMarketModel.h; sourceTree = "<group>"; };
+		F145DA0D1D76A88E0053DA8D /* YSQMallMarketModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQMallMarketModel.m; sourceTree = "<group>"; };
+		F145DA0F1D76A8B00053DA8D /* YSQMallListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQMallListModel.h; sourceTree = "<group>"; };
+		F145DA101D76A8B00053DA8D /* YSQMallListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQMallListModel.m; sourceTree = "<group>"; };
+		F145DA121D76AED90053DA8D /* YSQMarketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQMarketCell.h; sourceTree = "<group>"; };
+		F145DA131D76AED90053DA8D /* YSQMarketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQMarketCell.m; sourceTree = "<group>"; };
+		F145DA141D76AED90053DA8D /* YSQMarketCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSQMarketCell.xib; sourceTree = "<group>"; };
+		F145DA171D76E2910053DA8D /* YSQMallDiscountHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQMallDiscountHeaderCell.h; sourceTree = "<group>"; };
+		F145DA181D76E2910053DA8D /* YSQMallDiscountHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQMallDiscountHeaderCell.m; sourceTree = "<group>"; };
+		F145DA191D76E2910053DA8D /* YSQMallDiscountHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSQMallDiscountHeaderCell.xib; sourceTree = "<group>"; };
+		F145DA1C1D76E51D0053DA8D /* YSQMallDiscountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQMallDiscountCell.h; sourceTree = "<group>"; };
+		F145DA1D1D76E51D0053DA8D /* YSQMallDiscountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQMallDiscountCell.m; sourceTree = "<group>"; };
+		F145DA1E1D76E51D0053DA8D /* YSQMallDiscountCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSQMallDiscountCell.xib; sourceTree = "<group>"; };
+		F145DA211D76E88D0053DA8D /* YSQMallGoodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQMallGoodsCell.h; sourceTree = "<group>"; };
+		F145DA221D76E88D0053DA8D /* YSQMallGoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQMallGoodsCell.m; sourceTree = "<group>"; };
+		F145DA231D76E88D0053DA8D /* YSQMallGoodsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSQMallGoodsCell.xib; sourceTree = "<group>"; };
+		F145DA2B1D76FB310053DA8D /* YSQMallGoodsSuperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQMallGoodsSuperCell.h; sourceTree = "<group>"; };
+		F145DA2C1D76FB310053DA8D /* YSQMallGoodsSuperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQMallGoodsSuperCell.m; sourceTree = "<group>"; };
+		F1497DDF1DC0B95B00B0A256 /* Pods_MyTravel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_MyTravel.framework; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/Pods_MyTravel.framework"; sourceTree = "<group>"; };
+		F14C85121DB10CEB0001ED13 /* YSQChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQChatViewController.h; sourceTree = "<group>"; };
+		F14C85131DB10CEB0001ED13 /* YSQChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQChatViewController.m; sourceTree = "<group>"; };
+		F14C85151DB122500001ED13 /* YSQSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQSocket.h; sourceTree = "<group>"; };
+		F14C85161DB122500001ED13 /* YSQSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQSocket.m; sourceTree = "<group>"; };
+		F14E5FB81C883ACB00C212B2 /* YSQLocationHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQLocationHeaderView.h; sourceTree = "<group>"; };
+		F14E5FB91C883ACB00C212B2 /* YSQLocationHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQLocationHeaderView.m; sourceTree = "<group>"; };
+		F1506D281C5E5A1200335BF6 /* YSQCountryDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQCountryDetail.h; sourceTree = "<group>"; };
+		F1506D291C5E5A1200335BF6 /* YSQCountryDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQCountryDetail.m; sourceTree = "<group>"; };
+		F1506D2A1C5E5A1200335BF6 /* YSQHotCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQHotCity.h; sourceTree = "<group>"; };
+		F1506D2B1C5E5A1200335BF6 /* YSQHotCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQHotCity.m; sourceTree = "<group>"; };
+		F1506D2C1C5E5A1200335BF6 /* YSQNewDiscount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQNewDiscount.h; sourceTree = "<group>"; };
+		F1506D2D1C5E5A1200335BF6 /* YSQNewDiscount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQNewDiscount.m; sourceTree = "<group>"; };
+		F150B97D1C8E8B630054E975 /* YSQMineViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YSQMineViewController.storyboard; sourceTree = "<group>"; };
+		F150B97F1C8E91CD0054E975 /* YSQMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQMineController.h; sourceTree = "<group>"; };
+		F150B9801C8E91CD0054E975 /* YSQMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQMineController.m; sourceTree = "<group>"; };
+		F15603711D1034FC00C7E70B /* YSQHTMLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSQHTMLModel.h; path = ../YSQHTMLModel.h; sourceTree = "<group>"; };
+		F15603721D1034FC00C7E70B /* YSQHTMLModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YSQHTMLModel.m; path = ../YSQHTMLModel.m; sourceTree = "<group>"; };
+		F15603771D103BAB00C7E70B /* YSQBookCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQBookCoverView.h; sourceTree = "<group>"; };
+		F15603781D103BAB00C7E70B /* YSQBookCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQBookCoverView.m; sourceTree = "<group>"; };
+		F156037A1D103F1B00C7E70B /* YSQBookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQBookCell.h; sourceTree = "<group>"; };
+		F156037B1D103F1B00C7E70B /* YSQBookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQBookCell.m; sourceTree = "<group>"; };
+		F156037D1D10F94E00C7E70B /* YSQBookListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQBookListViewController.h; sourceTree = "<group>"; };
+		F156037E1D10F94E00C7E70B /* YSQBookListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQBookListViewController.m; sourceTree = "<group>"; };
+		F1624E3A1CC8C01600E274F0 /* YSQCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQCollectionHeaderView.h; sourceTree = "<group>"; };
+		F1624E3B1CC8C01600E274F0 /* YSQCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQCollectionHeaderView.m; sourceTree = "<group>"; };
+		F164830C1CCF12CB002E7017 /* YSQKitsReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQKitsReusableView.h; sourceTree = "<group>"; };
+		F164830D1CCF12CB002E7017 /* YSQKitsReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQKitsReusableView.m; sourceTree = "<group>"; };
+		F164830F1CCF3FF0002E7017 /* YSQStrategyDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQStrategyDetailController.h; sourceTree = "<group>"; };
+		F16483101CCF3FF0002E7017 /* YSQStrategyDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQStrategyDetailController.m; sourceTree = "<group>"; };
+		F16483121CCF41AC002E7017 /* YSQKitsDetailHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQKitsDetailHeaderView.h; sourceTree = "<group>"; };
+		F16483131CCF41AC002E7017 /* YSQKitsDetailHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQKitsDetailHeaderView.m; sourceTree = "<group>"; };
+		F16483151CCF444F002E7017 /* YSQAuthorInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQAuthorInfoCell.h; sourceTree = "<group>"; };
+		F16483161CCF444F002E7017 /* YSQAuthorInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQAuthorInfoCell.m; sourceTree = "<group>"; };
+		F16483181CCF46EF002E7017 /* YSQRelatedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQRelatedCell.h; sourceTree = "<group>"; };
+		F16483191CCF46EF002E7017 /* YSQRelatedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQRelatedCell.m; sourceTree = "<group>"; };
+		F164831B1CCF4BBC002E7017 /* YSQKitsIntroCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQKitsIntroCell.h; sourceTree = "<group>"; };
+		F164831C1CCF4BBC002E7017 /* YSQKitsIntroCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQKitsIntroCell.m; sourceTree = "<group>"; };
+		F164831E1CCF4F41002E7017 /* YSQKitsDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQKitsDetailModel.h; sourceTree = "<group>"; };
+		F164831F1CCF4F41002E7017 /* YSQKitsDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQKitsDetailModel.m; sourceTree = "<group>"; };
+		F164C1501CA3B40F0065FCCF /* YSQFreedomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQFreedomController.h; sourceTree = "<group>"; };
+		F164C1511CA3B40F0065FCCF /* YSQFreedomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQFreedomController.m; sourceTree = "<group>"; };
+		F165A54B1C3D452B00B0AF69 /* YSQNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQNavgationController.h; sourceTree = "<group>"; };
+		F165A54C1C3D452B00B0AF69 /* YSQNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQNavgationController.m; sourceTree = "<group>"; };
+		F165A54E1C3D4DFD00B0AF69 /* YSQHotNotesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQHotNotesCell.h; sourceTree = "<group>"; };
+		F165A54F1C3D4DFD00B0AF69 /* YSQHotNotesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQHotNotesCell.m; sourceTree = "<group>"; };
+		F165A5531C3D576E00B0AF69 /* YSQRecommendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQRecommendModel.h; sourceTree = "<group>"; };
+		F165A5541C3D576E00B0AF69 /* YSQRecommendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQRecommendModel.m; sourceTree = "<group>"; };
+		F165A5561C3D579B00B0AF69 /* YSQDiscountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQDiscountModel.h; sourceTree = "<group>"; };
+		F165A5571C3D579B00B0AF69 /* YSQDiscountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQDiscountModel.m; sourceTree = "<group>"; };
+		F165A5591C3D57D200B0AF69 /* YSQSlideModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQSlideModel.h; sourceTree = "<group>"; };
+		F165A55A1C3D57D200B0AF69 /* YSQSlideModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQSlideModel.m; sourceTree = "<group>"; };
+		F165A55C1C3D57FC00B0AF69 /* YSQSubjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQSubjectModel.h; sourceTree = "<group>"; };
+		F165A55D1C3D57FC00B0AF69 /* YSQSubjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQSubjectModel.m; sourceTree = "<group>"; };
+		F165A55F1C3D582D00B0AF69 /* YSQHotNotesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQHotNotesModel.h; sourceTree = "<group>"; };
+		F165A5601C3D582D00B0AF69 /* YSQHotNotesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQHotNotesModel.m; sourceTree = "<group>"; };
+		F168A9151C379C0300CBC9CA /* MyTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F168A9191C379C0300CBC9CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F168A91B1C379C0300CBC9CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F168A91C1C379C0300CBC9CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; wrapsLines = 1; };
+		F168A9291C379C0300CBC9CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F168A92E1C379C0300CBC9CA /* MyTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F168A9321C379C0300CBC9CA /* MyTravelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTravelTests.m; sourceTree = "<group>"; };
+		F168A9341C379C0300CBC9CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F168A9391C379C0300CBC9CA /* MyTravelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTravelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F168A93D1C379C0300CBC9CA /* MyTravelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTravelUITests.m; sourceTree = "<group>"; };
+		F168A93F1C379C0300CBC9CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F168A9F81C395E8900CBC9CA /* AFAppDotNetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppDotNetAPIClient.h; sourceTree = "<group>"; };
+		F168A9F91C395E8900CBC9CA /* AFAppDotNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppDotNetAPIClient.m; sourceTree = "<group>"; };
+		F168A9FA1C395E8900CBC9CA /* NetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
+		F168A9FB1C395E8900CBC9CA /* NetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
+		F168A9FE1C39680E00CBC9CA /* MyTravelPch.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTravelPch.pch; sourceTree = "<group>"; };
+		F168AA001C396AB900CBC9CA /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F168AA011C396AB900CBC9CA /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F168AA031C396B2400CBC9CA /* DestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationViewController.h; sourceTree = "<group>"; };
+		F168AA041C396B2400CBC9CA /* DestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
+		F168AA061C396B3300CBC9CA /* BBSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSViewController.h; sourceTree = "<group>"; };
+		F168AA071C396B3300CBC9CA /* BBSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSViewController.m; sourceTree = "<group>"; };
+		F168AA091C396B6D00CBC9CA /* RecomendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecomendViewController.h; sourceTree = "<group>"; };
+		F168AA0A1C396B6D00CBC9CA /* RecomendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecomendViewController.m; sourceTree = "<group>"; };
+		F17F61561D14DDCB00F71405 /* YSQHotBBSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQHotBBSViewController.h; sourceTree = "<group>"; };
+		F17F61571D14DDCB00F71405 /* YSQHotBBSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQHotBBSViewController.m; sourceTree = "<group>"; };
+		F17F61591D14E6AA00F71405 /* YSQSearchFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQSearchFriendsViewController.h; sourceTree = "<group>"; };
+		F17F615A1D14E6AA00F71405 /* YSQSearchFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQSearchFriendsViewController.m; sourceTree = "<group>"; };
+		F17F615C1D14F47600F71405 /* YSQBBSContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQBBSContentViewController.h; sourceTree = "<group>"; };
+		F17F615D1D14F47600F71405 /* YSQBBSContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQBBSContentViewController.m; sourceTree = "<group>"; };
+		F17F615F1D15538800F71405 /* YSQHotBBSOtherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQHotBBSOtherCell.h; sourceTree = "<group>"; };
+		F17F61601D15538800F71405 /* YSQHotBBSOtherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQHotBBSOtherCell.m; sourceTree = "<group>"; };
+		F17F7E4B1DA2B9120082651A /* YSQCustomTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQCustomTableView.h; sourceTree = "<group>"; };
+		F17F7E4C1DA2B9120082651A /* YSQCustomTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQCustomTableView.m; sourceTree = "<group>"; };
+		F1834CBB1CF41D26005E086F /* YSQAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQAddressViewController.h; sourceTree = "<group>"; };
+		F1834CBC1CF41D26005E086F /* YSQAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQAddressViewController.m; sourceTree = "<group>"; };
+		F1834CBE1CF41DB3005E086F /* YSQAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQAddressModel.h; sourceTree = "<group>"; };
+		F1834CBF1CF41DB3005E086F /* YSQAddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQAddressModel.m; sourceTree = "<group>"; };
+		F1885B511CFD208000ECF430 /* YSQUserCollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQUserCollectViewController.h; sourceTree = "<group>"; };
+		F1885B521CFD208000ECF430 /* YSQUserCollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQUserCollectViewController.m; sourceTree = "<group>"; };
+		F1885B541CFD866F00ECF430 /* YSQUserDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSQUserDAO.h; path = "MyTravel/我的/Controller/YSQUserDAO.h"; sourceTree = SOURCE_ROOT; };
+		F1885B551CFD866F00ECF430 /* YSQUserDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YSQUserDAO.m; path = "MyTravel/我的/Controller/YSQUserDAO.m"; sourceTree = SOURCE_ROOT; };
+		F189E2501CA4FE800036488B /* YSQTitleHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQTitleHeaderView.h; sourceTree = "<group>"; };
+		F189E2511CA4FE800036488B /* YSQTitleHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQTitleHeaderView.m; sourceTree = "<group>"; };
+		F189E2531CA501CC0036488B /* YSQFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQFooterView.h; sourceTree = "<group>"; };
+		F189E2541CA501CC0036488B /* YSQFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQFooterView.m; sourceTree = "<group>"; };
+		F189E2561CA521070036488B /* YSQAllFoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQAllFoundViewController.h; sourceTree = "<group>"; };
+		F189E2571CA521070036488B /* YSQAllFoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQAllFoundViewController.m; sourceTree = "<group>"; };
+		F189E2591CA5309A0036488B /* SQProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQProgressHUD.h; sourceTree = "<group>"; };
+		F189E25A1CA5309A0036488B /* SQProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQProgressHUD.m; sourceTree = "<group>"; };
+		F18E4AAE1DA605DA00EFD4E9 /* YSQLiveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQLiveController.h; sourceTree = "<group>"; };
+		F18E4AAF1DA605DA00EFD4E9 /* YSQLiveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQLiveController.m; sourceTree = "<group>"; };
+		F18E4AB11DA6062600EFD4E9 /* YSQLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQLiveCell.h; sourceTree = "<group>"; };
+		F18E4AB21DA6062600EFD4E9 /* YSQLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQLiveCell.m; sourceTree = "<group>"; };
+		F18E4AB41DA60E6100EFD4E9 /* UIImageView+YSQAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+YSQAdd.h"; sourceTree = "<group>"; };
+		F18E4AB51DA60E6100EFD4E9 /* UIImageView+YSQAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+YSQAdd.m"; sourceTree = "<group>"; };
+		F19408181C896CE100A9BDB3 /* FastCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastCoder.h; sourceTree = "<group>"; };
+		F19408191C896CE100A9BDB3 /* FastCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastCoder.m; sourceTree = "<group>"; };
+		F194081C1C896CE100A9BDB3 /* YSQLocationStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQLocationStore.h; sourceTree = "<group>"; };
+		F194081D1C896CE100A9BDB3 /* YSQLocationStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQLocationStore.m; sourceTree = "<group>"; };
+		F19408211C896D8500A9BDB3 /* NSObject+YSQStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YSQStore.h"; sourceTree = "<group>"; };
+		F19408221C896D8500A9BDB3 /* NSObject+YSQStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YSQStore.m"; sourceTree = "<group>"; };
+		F19408241C89867F00A9BDB3 /* YSQForumDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQForumDetailController.h; sourceTree = "<group>"; };
+		F19408251C89867F00A9BDB3 /* YSQForumDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQForumDetailController.m; sourceTree = "<group>"; };
+		F19593091C4FD77400DFDE31 /* YSQHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQHelp.h; sourceTree = "<group>"; };
+		F195930A1C4FD77400DFDE31 /* YSQHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQHelp.m; sourceTree = "<group>"; };
+		F19E865B1D13CA6500A4DB78 /* YSQHotBBSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQHotBBSModel.h; sourceTree = "<group>"; };
+		F19E865C1D13CA6500A4DB78 /* YSQHotBBSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQHotBBSModel.m; sourceTree = "<group>"; };
+		F19E865E1D140DDE00A4DB78 /* YSQBBSCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQBBSCell.h; sourceTree = "<group>"; };
+		F19E865F1D140DDE00A4DB78 /* YSQBBSCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQBBSCell.m; sourceTree = "<group>"; };
+		F19E86661D14342D00A4DB78 /* YSQSearchFriendsCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQSearchFriendsCellTableViewCell.h; sourceTree = "<group>"; };
+		F19E86671D14342D00A4DB78 /* YSQSearchFriendsCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQSearchFriendsCellTableViewCell.m; sourceTree = "<group>"; };
+		F19E86681D14342D00A4DB78 /* YSQSearchFriendsCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSQSearchFriendsCellTableViewCell.xib; sourceTree = "<group>"; };
+		F19EB3321C6D71A400EC40C9 /* YSQCityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQCityDetailViewController.h; sourceTree = "<group>"; };
+		F19EB3331C6D71A400EC40C9 /* YSQCityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQCityDetailViewController.m; sourceTree = "<group>"; };
+		F19EB3351C6D725800EC40C9 /* YSQCityLocationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQCityLocationCell.h; sourceTree = "<group>"; };
+		F19EB3361C6D725800EC40C9 /* YSQCityLocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQCityLocationCell.m; sourceTree = "<group>"; };
+		F19EB3371C6D725800EC40C9 /* YSQCityLocationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSQCityLocationCell.xib; sourceTree = "<group>"; };
+		F19EB33A1C6D7B8400EC40C9 /* YSQHotelChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQHotelChooseView.h; sourceTree = "<group>"; };
+		F19EB33B1C6D7B8400EC40C9 /* YSQHotelChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQHotelChooseView.m; sourceTree = "<group>"; };
+		F19EB33D1C6D7BB100EC40C9 /* YSQHotelChooseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSQHotelChooseView.xib; sourceTree = "<group>"; };
+		F1A121E01CCE54C4006606F2 /* YSQStrategyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQStrategyViewController.h; sourceTree = "<group>"; };
+		F1A121E11CCE54C4006606F2 /* YSQStrategyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQStrategyViewController.m; sourceTree = "<group>"; };
+		F1A121E41CCE56E5006606F2 /* XLPlainFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPlainFlowLayout.h; sourceTree = "<group>"; };
+		F1A121E51CCE56E5006606F2 /* XLPlainFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPlainFlowLayout.m; sourceTree = "<group>"; };
+		F1A121E71CCE6E53006606F2 /* YSQKitsTypeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQKitsTypeModel.h; sourceTree = "<group>"; };
+		F1A121E81CCE6E53006606F2 /* YSQKitsTypeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQKitsTypeModel.m; sourceTree = "<group>"; };
+		F1A121EA1CCF064C006606F2 /* YSQKitsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQKitsModel.h; sourceTree = "<group>"; };
+		F1A121EB1CCF064C006606F2 /* YSQKitsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQKitsModel.m; sourceTree = "<group>"; };
+		F1A121ED1CCF0CE6006606F2 /* YSQKitsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQKitsCell.h; sourceTree = "<group>"; };
+		F1A121EE1CCF0CE6006606F2 /* YSQKitsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQKitsCell.m; sourceTree = "<group>"; };
+		F1A1345F1C525ED5005E1A38 /* YSQWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSQWebViewController.h; path = ../YSQWebViewController.h; sourceTree = "<group>"; };
+		F1A134601C525ED5005E1A38 /* YSQWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YSQWebViewController.m; path = ../YSQWebViewController.m; sourceTree = "<group>"; };
+		F1A1AB4C1CD4BC9100B4D496 /* YSQBaseForumController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQBaseForumController.h; sourceTree = "<group>"; };
+		F1A1AB4D1CD4BC9100B4D496 /* YSQBaseForumController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQBaseForumController.m; sourceTree = "<group>"; };
+		F1A64DE21C86D30300E8C70D /* AttributeSetHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeSetHeader.h; sourceTree = "<group>"; };
+		F1A64DE31C86E29600E8C70D /* YSQPlayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQPlayModel.h; sourceTree = "<group>"; };
+		F1A64DE41C86E29600E8C70D /* YSQPlayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQPlayModel.m; sourceTree = "<group>"; };
+		F1A64DE61C86EBC600E8C70D /* YSQPlayDiscountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQPlayDiscountModel.h; sourceTree = "<group>"; };
+		F1A64DE71C86EBC600E8C70D /* YSQPlayDiscountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQPlayDiscountModel.m; sourceTree = "<group>"; };
+		F1A93E2C1D5438D2000BF4BE /* MyTravel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTravel.entitlements; sourceTree = "<group>"; };
+		F1A98CBF1DC0CF5200534B15 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
+		F1A98CC01DC0CF5200534B15 /* libCocoaAsyncSocket.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCocoaAsyncSocket.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/CocoaAsyncSocket/libCocoaAsyncSocket.a"; sourceTree = "<group>"; };
+		F1A98CC11DC0CF5200534B15 /* libFDFullscreenPopGesture.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFDFullscreenPopGesture.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/FDFullscreenPopGesture/libFDFullscreenPopGesture.a"; sourceTree = "<group>"; };
+		F1A98CC21DC0CF5200534B15 /* libFMDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMDB.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/FMDB/libFMDB.a"; sourceTree = "<group>"; };
+		F1A98CC31DC0CF5200534B15 /* libHMSegmentedControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHMSegmentedControl.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/HMSegmentedControl/libHMSegmentedControl.a"; sourceTree = "<group>"; };
+		F1A98CC41DC0CF5200534B15 /* libJSQMessagesViewController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJSQMessagesViewController.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/JSQMessagesViewController/libJSQMessagesViewController.a"; sourceTree = "<group>"; };
+		F1A98CC51DC0CF5200534B15 /* libJSQSystemSoundPlayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJSQSystemSoundPlayer.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/JSQSystemSoundPlayer/libJSQSystemSoundPlayer.a"; sourceTree = "<group>"; };
+		F1A98CC61DC0CF5200534B15 /* libLFLiveKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLFLiveKit.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/LFLiveKit/libLFLiveKit.a"; sourceTree = "<group>"; };
+		F1A98CC71DC0CF5200534B15 /* libMasonry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMasonry.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/Masonry/libMasonry.a"; sourceTree = "<group>"; };
+		F1A98CC81DC0CF5200534B15 /* libMJRefresh.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMJRefresh.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/MJRefresh/libMJRefresh.a"; sourceTree = "<group>"; };
+		F1A98CC91DC0CF5200534B15 /* libRDVTabBarController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRDVTabBarController.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/RDVTabBarController/libRDVTabBarController.a"; sourceTree = "<group>"; };
+		F1A98CCA1DC0CF5200534B15 /* libRealReachability.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRealReachability.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/RealReachability/libRealReachability.a"; sourceTree = "<group>"; };
+		F1A98CCB1DC0CF5200534B15 /* libSDCycleScrollView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDCycleScrollView.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/SDCycleScrollView/libSDCycleScrollView.a"; sourceTree = "<group>"; };
+		F1A98CCC1DC0CF5200534B15 /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/SDWebImage/libSDWebImage.a"; sourceTree = "<group>"; };
+		F1A98CCD1DC0CF5200534B15 /* libSSZipArchive.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSSZipArchive.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/SSZipArchive/libSSZipArchive.a"; sourceTree = "<group>"; };
+		F1A98CCE1DC0CF5200534B15 /* libYYKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYYKit.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/YYKit/libYYKit.a"; sourceTree = "<group>"; };
+		F1B0863E1CA2CDBF00A33285 /* YSQAllCityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQAllCityController.h; sourceTree = "<group>"; };
+		F1B0863F1CA2CDBF00A33285 /* YSQAllCityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQAllCityController.m; sourceTree = "<group>"; };
+		F1B086411CA2CE1600A33285 /* YSQAllCityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQAllCityCell.h; sourceTree = "<group>"; };
+		F1B086421CA2CE1600A33285 /* YSQAllCityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQAllCityCell.m; sourceTree = "<group>"; };
+		F1B086441CA2D62E00A33285 /* YSQAllCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQAllCityModel.h; sourceTree = "<group>"; };
+		F1B086451CA2D62E00A33285 /* YSQAllCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQAllCityModel.m; sourceTree = "<group>"; };
+		F1B1E5E91C8C77750097913F /* YSQTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQTabBarController.h; sourceTree = "<group>"; };
+		F1B1E5EA1C8C77750097913F /* YSQTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQTabBarController.m; sourceTree = "<group>"; wrapsLines = 1; };
+		F1B20EE31D4E5CA400F98E02 /* NSObject+YSQCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YSQCache.h"; sourceTree = "<group>"; };
+		F1B20EE41D4E5CA400F98E02 /* NSObject+YSQCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YSQCache.m"; sourceTree = "<group>"; };
+		F1BBC00B1CDBA096006EF24B /* YSQHotelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQHotelViewController.h; sourceTree = "<group>"; };
+		F1BBC00C1CDBA096006EF24B /* YSQHotelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQHotelViewController.m; sourceTree = "<group>"; };
+		F1BC59721CE9CC9600628C35 /* YSQLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQLoginViewController.h; sourceTree = "<group>"; };
+		F1BC59731CE9CC9600628C35 /* YSQLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQLoginViewController.m; sourceTree = "<group>"; };
+		F1BC59741CE9CC9600628C35 /* YSQLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSQLoginViewController.xib; sourceTree = "<group>"; };
+		F1BC59771CE9DA3D00628C35 /* YSQRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQRegisterViewController.h; sourceTree = "<group>"; };
+		F1BC59781CE9DA3D00628C35 /* YSQRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQRegisterViewController.m; sourceTree = "<group>"; };
+		F1BC59791CE9DA3D00628C35 /* YSQRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSQRegisterViewController.xib; sourceTree = "<group>"; };
+		F1BEB5761DA4D6AB007CB977 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = MyTravel/IJKMediaFramework.framework; sourceTree = "<group>"; };
+		F1BEB5781DA4D799007CB977 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		F1BEB57A1DA4D7AA007CB977 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F1BEB57C1DA4D7B3007CB977 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F1BEB57E1DA4D7BC007CB977 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F1BEB5801DA4D7CC007CB977 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F1BEB5821DA4D7D5007CB977 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		F1BEB5841DA4D7DC007CB977 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		F1BEB5861DA4D7E6007CB977 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F1BEB5881DA4D7ED007CB977 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F1BEB58A1DA4D7F3007CB977 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F1BEB5951DA4DD51007CB977 /* YSQLiveListControllerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQLiveListControllerController.h; sourceTree = "<group>"; };
+		F1BEB5961DA4DD51007CB977 /* YSQLiveListControllerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQLiveListControllerController.m; sourceTree = "<group>"; };
+		F1BEB5981DA4DDCF007CB977 /* YSQLiveItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQLiveItem.h; sourceTree = "<group>"; };
+		F1BEB5991DA4DDCF007CB977 /* YSQLiveItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQLiveItem.m; sourceTree = "<group>"; };
+		F1BEB59B1DA4DEA2007CB977 /* YSQCreatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQCreatorItem.h; sourceTree = "<group>"; };
+		F1BEB59C1DA4DEA2007CB977 /* YSQCreatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQCreatorItem.m; sourceTree = "<group>"; };
+		F1BEB59E1DA4DFE0007CB977 /* YZLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZLiveCell.h; sourceTree = "<group>"; };
+		F1BEB59F1DA4DFE0007CB977 /* YZLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZLiveCell.m; sourceTree = "<group>"; };
+		F1BEB5A01DA4DFE0007CB977 /* YZLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YZLiveCell.xib; sourceTree = "<group>"; };
+		F1BECA6D1DA62F2A00804736 /* YSQShowYourselfController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQShowYourselfController.h; sourceTree = "<group>"; };
+		F1BECA6E1DA62F2A00804736 /* YSQShowYourselfController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQShowYourselfController.m; sourceTree = "<group>"; };
+		F1BECA6F1DA62F2A00804736 /* YSQShowYourselfController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSQShowYourselfController.xib; sourceTree = "<group>"; };
+		F1BECA721DA631FE00804736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1BFD2C01C66F81900F96FC3 /* YSQCountry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQCountry.h; sourceTree = "<group>"; };
+		F1BFD2C11C66F81900F96FC3 /* YSQCountry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQCountry.m; sourceTree = "<group>"; };
+		F1CC1E471D6F421B005BE04E /* YSQSearchHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQSearchHeadView.h; sourceTree = "<group>"; };
+		F1CC1E481D6F421B005BE04E /* YSQSearchHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQSearchHeadView.m; sourceTree = "<group>"; };
+		F1D2337E1CBE444800418312 /* YSQSelectOverseasController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQSelectOverseasController.h; sourceTree = "<group>"; };
+		F1D2337F1CBE444800418312 /* YSQSelectOverseasController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQSelectOverseasController.m; sourceTree = "<group>"; };
+		F1D9B8F01C562B6200C3C043 /* YSQBaseControllerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQBaseControllerView.h; sourceTree = "<group>"; };
+		F1D9B8F11C562B6200C3C043 /* YSQBaseControllerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQBaseControllerView.m; sourceTree = "<group>"; };
+		F1D9B8F31C562FC700C3C043 /* YSQDistinctViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQDistinctViewController.h; sourceTree = "<group>"; };
+		F1D9B8F41C562FC800C3C043 /* YSQDistinctViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQDistinctViewController.m; sourceTree = "<group>"; };
+		F1E06C611CFBF1CE008AD4C1 /* YSQFeedBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQFeedBackViewController.h; sourceTree = "<group>"; };
+		F1E06C621CFBF1CE008AD4C1 /* YSQFeedBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQFeedBackViewController.m; sourceTree = "<group>"; };
+		F1E2F19E1CC07DC500374E55 /* YSQDiscountChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQDiscountChooseView.h; sourceTree = "<group>"; };
+		F1E2F19F1CC07DC500374E55 /* YSQDiscountChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQDiscountChooseView.m; sourceTree = "<group>"; };
+		F1E2F1A11CC083C500374E55 /* YSQSegmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQSegmentCell.h; sourceTree = "<group>"; };
+		F1E2F1A21CC083C500374E55 /* YSQSegmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQSegmentCell.m; sourceTree = "<group>"; };
+		F1E2F1A41CC0BBED00374E55 /* YSQChooseTypeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQChooseTypeModel.h; sourceTree = "<group>"; };
+		F1E2F1A51CC0BBED00374E55 /* YSQChooseTypeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQChooseTypeModel.m; sourceTree = "<group>"; };
+		F1ECA61E1C6449CE00A6DC6D /* YSQTableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQTableViewHeaderFooterView.h; sourceTree = "<group>"; };
+		F1ECA61F1C6449CE00A6DC6D /* YSQTableViewHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQTableViewHeaderFooterView.m; sourceTree = "<group>"; };
+		F1ECA6241C648EF800A6DC6D /* YSQCommonHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQCommonHeaderCell.h; sourceTree = "<group>"; };
+		F1ECA6251C648EF800A6DC6D /* YSQCommonHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQCommonHeaderCell.m; sourceTree = "<group>"; };
+		F1ECA6271C6498B500A6DC6D /* YSQFreedomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQFreedomCell.h; sourceTree = "<group>"; };
+		F1ECA6281C6498B500A6DC6D /* YSQFreedomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQFreedomCell.m; sourceTree = "<group>"; };
+		F1EEFF6B1C95413600C13F05 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		F1EEFF6C1C95413600C13F05 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		F1F4D6BC1CA406FB00E58AE5 /* YSQFreeChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQFreeChildViewController.h; sourceTree = "<group>"; };
+		F1F4D6BD1CA406FB00E58AE5 /* YSQFreeChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQFreeChildViewController.m; sourceTree = "<group>"; };
+		F1F5F6CD1D6EF3D900CCAB3F /* YSQShopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQShopController.h; sourceTree = "<group>"; };
+		F1F5F6CE1D6EF3D900CCAB3F /* YSQShopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQShopController.m; sourceTree = "<group>"; };
+		F1F5F6D11D6EFE5F00CCAB3F /* YSQSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQSearchController.h; sourceTree = "<group>"; };
+		F1F5F6D21D6EFE5F00CCAB3F /* YSQSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQSearchController.m; sourceTree = "<group>"; };
+		F1F5F6D51D6F165F00CCAB3F /* YSQTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQTagView.h; sourceTree = "<group>"; };
+		F1F5F6D61D6F165F00CCAB3F /* YSQTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQTagView.m; sourceTree = "<group>"; };
+		F1F696AD1CC7C90600DBDE4A /* YSQCityChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQCityChooseView.h; sourceTree = "<group>"; };
+		F1F696AE1CC7C90600DBDE4A /* YSQCityChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQCityChooseView.m; sourceTree = "<group>"; };
+		F1FD90891C64F85E008BD6EF /* YSQLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQLabelView.h; sourceTree = "<group>"; };
+		F1FD908A1C64F85E008BD6EF /* YSQLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQLabelView.m; sourceTree = "<group>"; };
+		F1FD908E1C6503A0008BD6EF /* YSQContinent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQContinent.h; sourceTree = "<group>"; };
+		F1FD908F1C6503A0008BD6EF /* YSQContinent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQContinent.m; sourceTree = "<group>"; };
+		F1FEF5601CF985880074C0A7 /* YSQMineHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSQMineHeaderView.h; path = "MyTravel/推荐/View/YSQMineHeaderView.h"; sourceTree = SOURCE_ROOT; };
+		F1FEF5611CF985880074C0A7 /* YSQMineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YSQMineHeaderView.m; path = "MyTravel/推荐/View/YSQMineHeaderView.m"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F168A9121C379C0300CBC9CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A98CCF1DC0CF5200534B15 /* libAFNetworking.a in Frameworks */,
+				F1A98CD01DC0CF5200534B15 /* libCocoaAsyncSocket.a in Frameworks */,
+				F1A98CD11DC0CF5200534B15 /* libFDFullscreenPopGesture.a in Frameworks */,
+				F1A98CD21DC0CF5200534B15 /* libFMDB.a in Frameworks */,
+				F1A98CD31DC0CF5200534B15 /* libHMSegmentedControl.a in Frameworks */,
+				F1A98CD41DC0CF5200534B15 /* libJSQMessagesViewController.a in Frameworks */,
+				F1A98CD51DC0CF5200534B15 /* libJSQSystemSoundPlayer.a in Frameworks */,
+				F1A98CD61DC0CF5200534B15 /* libLFLiveKit.a in Frameworks */,
+				F1A98CD71DC0CF5200534B15 /* libMasonry.a in Frameworks */,
+				F1A98CD81DC0CF5200534B15 /* libMJRefresh.a in Frameworks */,
+				F1A98CD91DC0CF5200534B15 /* libRDVTabBarController.a in Frameworks */,
+				F1A98CDA1DC0CF5200534B15 /* libRealReachability.a in Frameworks */,
+				F1A98CDB1DC0CF5200534B15 /* libSDCycleScrollView.a in Frameworks */,
+				F1A98CDC1DC0CF5200534B15 /* libSDWebImage.a in Frameworks */,
+				F1A98CDD1DC0CF5200534B15 /* libSSZipArchive.a in Frameworks */,
+				F1A98CDE1DC0CF5200534B15 /* libYYKit.a in Frameworks */,
+				F1BEB58B1DA4D7F3007CB977 /* AudioToolbox.framework in Frameworks */,
+				F1BEB5891DA4D7ED007CB977 /* AVFoundation.framework in Frameworks */,
+				F1BEB5871DA4D7E6007CB977 /* CoreMedia.framework in Frameworks */,
+				F1BEB5851DA4D7DC007CB977 /* CoreVideo.framework in Frameworks */,
+				F1BEB5831DA4D7D5007CB977 /* libbz2.tbd in Frameworks */,
+				F1BEB5811DA4D7CC007CB977 /* libz.tbd in Frameworks */,
+				F1BEB57F1DA4D7BC007CB977 /* MediaPlayer.framework in Frameworks */,
+				F1BEB57D1DA4D7B3007CB977 /* MobileCoreServices.framework in Frameworks */,
+				F1BEB57B1DA4D7AA007CB977 /* OpenGLES.framework in Frameworks */,
+				F1BEB5791DA4D799007CB977 /* VideoToolbox.framework in Frameworks */,
+				F10024F41CDC427500C3D209 /* CoreTelephony.framework in Frameworks */,
+				F10024F21CDC426000C3D209 /* CFNetwork.framework in Frameworks */,
+				F10024F01CDC423300C3D209 /* jpush-ios-2.1.6.a in Frameworks */,
+				F1BEB5771DA4D6AB007CB977 /* IJKMediaFramework.framework in Frameworks */,
+				1D8595557AB277FB682275D2 /* libPods-MyTravel.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F168A92B1C379C0300CBC9CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F168A9361C379C0300CBC9CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B471394C123A24B84ABFFAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1A98CBF1DC0CF5200534B15 /* libAFNetworking.a */,
+				F1A98CC01DC0CF5200534B15 /* libCocoaAsyncSocket.a */,
+				F1A98CC11DC0CF5200534B15 /* libFDFullscreenPopGesture.a */,
+				F1A98CC21DC0CF5200534B15 /* libFMDB.a */,
+				F1A98CC31DC0CF5200534B15 /* libHMSegmentedControl.a */,
+				F1A98CC41DC0CF5200534B15 /* libJSQMessagesViewController.a */,
+				F1A98CC51DC0CF5200534B15 /* libJSQSystemSoundPlayer.a */,
+				F1A98CC61DC0CF5200534B15 /* libLFLiveKit.a */,
+				F1A98CC71DC0CF5200534B15 /* libMasonry.a */,
+				F1A98CC81DC0CF5200534B15 /* libMJRefresh.a */,
+				F1A98CC91DC0CF5200534B15 /* libRDVTabBarController.a */,
+				F1A98CCA1DC0CF5200534B15 /* libRealReachability.a */,
+				F1A98CCB1DC0CF5200534B15 /* libSDCycleScrollView.a */,
+				F1A98CCC1DC0CF5200534B15 /* libSDWebImage.a */,
+				F1A98CCD1DC0CF5200534B15 /* libSSZipArchive.a */,
+				F1A98CCE1DC0CF5200534B15 /* libYYKit.a */,
+				F1497DDF1DC0B95B00B0A256 /* Pods_MyTravel.framework */,
+				F1BEB58A1DA4D7F3007CB977 /* AudioToolbox.framework */,
+				F1BEB5881DA4D7ED007CB977 /* AVFoundation.framework */,
+				F1BEB5861DA4D7E6007CB977 /* CoreMedia.framework */,
+				F1BEB5841DA4D7DC007CB977 /* CoreVideo.framework */,
+				F1BEB5821DA4D7D5007CB977 /* libbz2.tbd */,
+				F1BEB5801DA4D7CC007CB977 /* libz.tbd */,
+				F1BEB57E1DA4D7BC007CB977 /* MediaPlayer.framework */,
+				F1BEB57C1DA4D7B3007CB977 /* MobileCoreServices.framework */,
+				F1BEB57A1DA4D7AA007CB977 /* OpenGLES.framework */,
+				F1BEB5781DA4D799007CB977 /* VideoToolbox.framework */,
+				F1BEB5761DA4D6AB007CB977 /* IJKMediaFramework.framework */,
+				F10024F31CDC427500C3D209 /* CoreTelephony.framework */,
+				F10024F11CDC426000C3D209 /* CFNetwork.framework */,
+				DD5222845D6996521B790AFD /* libPods-MyTravel.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E20F916536DC616174A8BA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F23A080CADAB25CA85D2C95 /* Pods-MyTravel.debug.xcconfig */,
+				3BE42A129C0B2936FA4413E6 /* Pods-MyTravel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F10024ED1CDC421E00C3D209 /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				F10024EE1CDC423300C3D209 /* jpush-ios-2.1.6.a */,
+				F10024EF1CDC423300C3D209 /* JPUSHService.h */,
+			);
+			path = JPush;
+			sourceTree = "<group>";
+		};
+		F111AEC71D72EC3500E628CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F111AEC81D72EC5500E628CB /* YSQSearchResultModel.h */,
+				F111AEC91D72EC5500E628CB /* YSQSearchResultModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F1262EA11D12EF640036ADF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1262EA21D12EF640036ADF5 /* YSQAskModel.h */,
+				F1262EA31D12EF640036ADF5 /* YSQAskModel.m */,
+				F1262EA41D12EF640036ADF5 /* YSQBBSCountModel.h */,
+				F1262EA51D12EF640036ADF5 /* YSQBBSCountModel.m */,
+				F1262EA61D12EF640036ADF5 /* YSQCompanyModel.h */,
+				F1262EA71D12EF640036ADF5 /* YSQCompanyModel.m */,
+				F1262EA81D12EF640036ADF5 /* YSQForumDetailModel.h */,
+				F1262EA91D12EF640036ADF5 /* YSQForumDetailModel.m */,
+				F1262EAA1D12EF650036ADF5 /* YSQForumModel.h */,
+				F1262EAB1D12EF650036ADF5 /* YSQForumModel.m */,
+				F1262EAC1D12EF650036ADF5 /* YSQGroupModel.h */,
+				F1262EAD1D12EF650036ADF5 /* YSQGroupModel.m */,
+				F19E865B1D13CA6500A4DB78 /* YSQHotBBSModel.h */,
+				F19E865C1D13CA6500A4DB78 /* YSQHotBBSModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1262EAE1D12EF650036ADF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1262EAF1D12EF650036ADF5 /* YSQAskCell.h */,
+				F1262EB01D12EF650036ADF5 /* YSQAskCell.m */,
+				F1262EB11D12EF650036ADF5 /* YSQAskCell.xib */,
+				F1262EB21D12EF650036ADF5 /* YSQForumCell.h */,
+				F1262EB31D12EF650036ADF5 /* YSQForumCell.m */,
+				F1262EB41D12EF650036ADF5 /* YSQForumCollectionCell.h */,
+				F1262EB51D12EF650036ADF5 /* YSQForumCollectionCell.m */,
+				F1262EB61D12EF650036ADF5 /* YSQForumHeaderView.h */,
+				F1262EB71D12EF650036ADF5 /* YSQForumHeaderView.m */,
+				F1262EB81D12EF650036ADF5 /* YSQNewInfoCell.h */,
+				F1262EB91D12EF650036ADF5 /* YSQNewInfoCell.m */,
+				F1262EBA1D12EF650036ADF5 /* YSQTopFlagView.h */,
+				F1262EBB1D12EF650036ADF5 /* YSQTopFlagView.m */,
+				F1262EBC1D12EF650036ADF5 /* YSQTravelGuideCell.h */,
+				F1262EBD1D12EF650036ADF5 /* YSQTravelGuideCell.m */,
+				F1262EBE1D12EF650036ADF5 /* YSQTravelGuideCell.xib */,
+				F1262ECE1D12F2BA0036ADF5 /* YSQHotBBSCell.h */,
+				F1262ECF1D12F2BA0036ADF5 /* YSQHotBBSCell.m */,
+				F17F615F1D15538800F71405 /* YSQHotBBSOtherCell.h */,
+				F17F61601D15538800F71405 /* YSQHotBBSOtherCell.m */,
+				F19E865E1D140DDE00A4DB78 /* YSQBBSCell.h */,
+				F19E865F1D140DDE00A4DB78 /* YSQBBSCell.m */,
+				F19E86661D14342D00A4DB78 /* YSQSearchFriendsCellTableViewCell.h */,
+				F19E86671D14342D00A4DB78 /* YSQSearchFriendsCellTableViewCell.m */,
+				F19E86681D14342D00A4DB78 /* YSQSearchFriendsCellTableViewCell.xib */,
+				F17F7E4B1DA2B9120082651A /* YSQCustomTableView.h */,
+				F17F7E4C1DA2B9120082651A /* YSQCustomTableView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F12AA3CB1C9EAD2A00FB239A /* SQProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F189E2591CA5309A0036488B /* SQProgressHUD.h */,
+				F189E25A1CA5309A0036488B /* SQProgressHUD.m */,
+			);
+			path = SQProgressHUD;
+			sourceTree = "<group>";
+		};
+		F14E5FB11C88362700C212B2 /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				F145D9F31D7687BC0053DA8D /* NSString+SQAdd.h */,
+				F145D9F41D7687BC0053DA8D /* NSString+SQAdd.m */,
+				F18E4AB41DA60E6100EFD4E9 /* UIImageView+YSQAdd.h */,
+				F18E4AB51DA60E6100EFD4E9 /* UIImageView+YSQAdd.m */,
+			);
+			name = categories;
+			path = MyTravel/categories;
+			sourceTree = "<group>";
+		};
+		F1506D271C5E5A1200335BF6 /* CityDetailModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1506D281C5E5A1200335BF6 /* YSQCountryDetail.h */,
+				F1506D291C5E5A1200335BF6 /* YSQCountryDetail.m */,
+				F1506D2A1C5E5A1200335BF6 /* YSQHotCity.h */,
+				F1506D2B1C5E5A1200335BF6 /* YSQHotCity.m */,
+				F1506D2C1C5E5A1200335BF6 /* YSQNewDiscount.h */,
+				F1506D2D1C5E5A1200335BF6 /* YSQNewDiscount.m */,
+			);
+			path = CityDetailModel;
+			sourceTree = "<group>";
+		};
+		F15603741D103B6000C7E70B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F1A1345F1C525ED5005E1A38 /* YSQWebViewController.h */,
+				F1A134601C525ED5005E1A38 /* YSQWebViewController.m */,
+				F13870E31D0D9F6200F249A1 /* YSQReadBookViewController.h */,
+				F13870E41D0D9F6200F249A1 /* YSQReadBookViewController.m */,
+				F156037D1D10F94E00C7E70B /* YSQBookListViewController.h */,
+				F156037E1D10F94E00C7E70B /* YSQBookListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F15603751D103B6100C7E70B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F15603711D1034FC00C7E70B /* YSQHTMLModel.h */,
+				F15603721D1034FC00C7E70B /* YSQHTMLModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F15603761D103B6100C7E70B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F15603771D103BAB00C7E70B /* YSQBookCoverView.h */,
+				F15603781D103BAB00C7E70B /* YSQBookCoverView.m */,
+				F156037A1D103F1B00C7E70B /* YSQBookCell.h */,
+				F156037B1D103F1B00C7E70B /* YSQBookCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F165A54A1C3D450F00B0AF69 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F165A54B1C3D452B00B0AF69 /* YSQNavgationController.h */,
+				F165A54C1C3D452B00B0AF69 /* YSQNavgationController.m */,
+			);
+			name = Navigation;
+			path = MyTravel/Navigation;
+			sourceTree = "<group>";
+		};
+		F168A90C1C379C0300CBC9CA = {
+			isa = PBXGroup;
+			children = (
+				F1D9B8EF1C562B1C00C3C043 /* BaseController */,
+				F1A1345E1C525EBA005E1A38 /* WebView */,
+				F1EEFF6A1C95412E00C13F05 /* Vendor */,
+				F19593081C4FD76800DFDE31 /* Utils */,
+				F14E5FB11C88362700C212B2 /* categories */,
+				F165A54A1C3D450F00B0AF69 /* Navigation */,
+				F168A9FF1C396AA100CBC9CA /* RootVC */,
+				F1F5F6D01D6EFE0F00CCAB3F /* Common */,
+				F1BC59711CE9CC7A00628C35 /* Login */,
+				F168A9F71C395E5700CBC9CA /* NetworkManager */,
+				F1F5F6C91D6EF3AA00CCAB3F /* 商城 */,
+				F168A9E61C395E1700CBC9CA /* 目的地 */,
+				F168A9EA1C395E1700CBC9CA /* 社区 */,
+				F168A9EE1C395E1700CBC9CA /* 推荐 */,
+				F168A9F21C395E1700CBC9CA /* 我的 */,
+				F168A9171C379C0300CBC9CA /* MyTravel */,
+				F168A9311C379C0300CBC9CA /* MyTravelTests */,
+				F168A93C1C379C0300CBC9CA /* MyTravelUITests */,
+				F168A9161C379C0300CBC9CA /* Products */,
+				2B471394C123A24B84ABFFAF /* Frameworks */,
+				9E20F916536DC616174A8BA1 /* Pods */,
+			);
+			sourceTree = "<group>";
+			wrapsLines = 1;
+		};
+		F168A9161C379C0300CBC9CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F168A9151C379C0300CBC9CA /* MyTravel.app */,
+				F168A92E1C379C0300CBC9CA /* MyTravelTests.xctest */,
+				F168A9391C379C0300CBC9CA /* MyTravelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F168A9171C379C0300CBC9CA /* MyTravel */ = {
+			isa = PBXGroup;
+			children = (
+				F1A93E2C1D5438D2000BF4BE /* MyTravel.entitlements */,
+				F168A91B1C379C0300CBC9CA /* AppDelegate.h */,
+				F168A91C1C379C0300CBC9CA /* AppDelegate.m */,
+				F168A9181C379C0300CBC9CA /* Supporting Files */,
+			);
+			path = MyTravel;
+			sourceTree = "<group>";
+		};
+		F168A9181C379C0300CBC9CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1BECA721DA631FE00804736 /* Assets.xcassets */,
+				F168A9291C379C0300CBC9CA /* Info.plist */,
+				F168A9191C379C0300CBC9CA /* main.m */,
+				F168A9FE1C39680E00CBC9CA /* MyTravelPch.pch */,
+				F10D42C21C3AAB0A0026887A /* URLHead.h */,
+				F1A64DE21C86D30300E8C70D /* AttributeSetHeader.h */,
+				F10024F51CDC42FF00C3D209 /* PushConfig.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F168A9311C379C0300CBC9CA /* MyTravelTests */ = {
+			isa = PBXGroup;
+			children = (
+				F168A9321C379C0300CBC9CA /* MyTravelTests.m */,
+				F168A9341C379C0300CBC9CA /* Info.plist */,
+			);
+			path = MyTravelTests;
+			sourceTree = "<group>";
+		};
+		F168A93C1C379C0300CBC9CA /* MyTravelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F168A93D1C379C0300CBC9CA /* MyTravelUITests.m */,
+				F168A93F1C379C0300CBC9CA /* Info.plist */,
+			);
+			path = MyTravelUITests;
+			sourceTree = "<group>";
+		};
+		F168A9E61C395E1700CBC9CA /* 目的地 */ = {
+			isa = PBXGroup;
+			children = (
+				F168A9E71C395E1700CBC9CA /* Controller */,
+				F168A9E81C395E1700CBC9CA /* Model */,
+				F1ECA61D1C6449C000A6DC6D /* View */,
+			);
+			name = "目的地";
+			path = "MyTravel/目的地";
+			sourceTree = "<group>";
+		};
+		F168A9E71C395E1700CBC9CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F168AA031C396B2400CBC9CA /* DestinationViewController.h */,
+				F168AA041C396B2400CBC9CA /* DestinationViewController.m */,
+				F1D9B8F31C562FC700C3C043 /* YSQDistinctViewController.h */,
+				F1D9B8F41C562FC800C3C043 /* YSQDistinctViewController.m */,
+				F19EB3321C6D71A400EC40C9 /* YSQCityDetailViewController.h */,
+				F19EB3331C6D71A400EC40C9 /* YSQCityDetailViewController.m */,
+				F1338DFC1C85D70900D53A8E /* YSQGreatestChooseController.h */,
+				F1338DFD1C85D70900D53A8E /* YSQGreatestChooseController.m */,
+				F1338E051C86CB4400D53A8E /* YSQPlayViewController.h */,
+				F1338E061C86CB4400D53A8E /* YSQPlayViewController.m */,
+				F1454AF31C8BF9E0004B1C86 /* YSQHotelController.h */,
+				F1454AF41C8BF9E0004B1C86 /* YSQHotelController.m */,
+				F1B0863E1CA2CDBF00A33285 /* YSQAllCityController.h */,
+				F1B0863F1CA2CDBF00A33285 /* YSQAllCityController.m */,
+				F164C1501CA3B40F0065FCCF /* YSQFreedomController.h */,
+				F164C1511CA3B40F0065FCCF /* YSQFreedomController.m */,
+				F1F4D6BC1CA406FB00E58AE5 /* YSQFreeChildViewController.h */,
+				F1F4D6BD1CA406FB00E58AE5 /* YSQFreeChildViewController.m */,
+				F1D2337E1CBE444800418312 /* YSQSelectOverseasController.h */,
+				F1D2337F1CBE444800418312 /* YSQSelectOverseasController.m */,
+				F10DDA2E1D20A1E6003C30B6 /* YSQShowLocationViewController.h */,
+				F10DDA2F1D20A1E6003C30B6 /* YSQShowLocationViewController.m */,
+				F10DDA371D224A99003C30B6 /* YSQMoreCategoriesViewController.h */,
+				F10DDA381D224A99003C30B6 /* YSQMoreCategoriesViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F168A9E81C395E1700CBC9CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F19EB33F1C6D8BE900EC40C9 /* HotCityDetail */,
+				F1FD908D1C650385008BD6EF /* CountryModel */,
+				F1506D271C5E5A1200335BF6 /* CityDetailModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F168A9EA1C395E1700CBC9CA /* 社区 */ = {
+			isa = PBXGroup;
+			children = (
+				F168A9EB1C395E1700CBC9CA /* Controller */,
+				F1262EA11D12EF640036ADF5 /* Model */,
+				F1262EAE1D12EF650036ADF5 /* View */,
+			);
+			name = "社区";
+			path = "MyTravel/社区";
+			sourceTree = "<group>";
+		};
+		F168A9EB1C395E1700CBC9CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F168AA061C396B3300CBC9CA /* BBSViewController.h */,
+				F168AA071C396B3300CBC9CA /* BBSViewController.m */,
+				F19408241C89867F00A9BDB3 /* YSQForumDetailController.h */,
+				F19408251C89867F00A9BDB3 /* YSQForumDetailController.m */,
+				F1A1AB4C1CD4BC9100B4D496 /* YSQBaseForumController.h */,
+				F1A1AB4D1CD4BC9100B4D496 /* YSQBaseForumController.m */,
+				F17F61561D14DDCB00F71405 /* YSQHotBBSViewController.h */,
+				F17F61571D14DDCB00F71405 /* YSQHotBBSViewController.m */,
+				F17F61591D14E6AA00F71405 /* YSQSearchFriendsViewController.h */,
+				F17F615A1D14E6AA00F71405 /* YSQSearchFriendsViewController.m */,
+				F17F615C1D14F47600F71405 /* YSQBBSContentViewController.h */,
+				F17F615D1D14F47600F71405 /* YSQBBSContentViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F168A9EE1C395E1700CBC9CA /* 推荐 */ = {
+			isa = PBXGroup;
+			children = (
+				F168A9EF1C395E1700CBC9CA /* Controller */,
+				F168A9F01C395E1700CBC9CA /* Model */,
+				F168A9F11C395E1700CBC9CA /* View */,
+			);
+			name = "推荐";
+			path = "MyTravel/推荐";
+			sourceTree = "<group>";
+		};
+		F168A9EF1C395E1700CBC9CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F168AA091C396B6D00CBC9CA /* RecomendViewController.h */,
+				F168AA0A1C396B6D00CBC9CA /* RecomendViewController.m */,
+				F189E2561CA521070036488B /* YSQAllFoundViewController.h */,
+				F189E2571CA521070036488B /* YSQAllFoundViewController.m */,
+				F11743521CBF3D500034447F /* YSQAllDiscountViewController.h */,
+				F11743531CBF3D500034447F /* YSQAllDiscountViewController.m */,
+				F1A121E01CCE54C4006606F2 /* YSQStrategyViewController.h */,
+				F1A121E11CCE54C4006606F2 /* YSQStrategyViewController.m */,
+				F164830F1CCF3FF0002E7017 /* YSQStrategyDetailController.h */,
+				F16483101CCF3FF0002E7017 /* YSQStrategyDetailController.m */,
+				F1BBC00B1CDBA096006EF24B /* YSQHotelViewController.h */,
+				F1BBC00C1CDBA096006EF24B /* YSQHotelViewController.m */,
+				F1834CBB1CF41D26005E086F /* YSQAddressViewController.h */,
+				F1834CBC1CF41D26005E086F /* YSQAddressViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F168A9F01C395E1700CBC9CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F165A5531C3D576E00B0AF69 /* YSQRecommendModel.h */,
+				F165A5541C3D576E00B0AF69 /* YSQRecommendModel.m */,
+				F165A5561C3D579B00B0AF69 /* YSQDiscountModel.h */,
+				F165A5571C3D579B00B0AF69 /* YSQDiscountModel.m */,
+				F165A5591C3D57D200B0AF69 /* YSQSlideModel.h */,
+				F165A55A1C3D57D200B0AF69 /* YSQSlideModel.m */,
+				F165A55C1C3D57FC00B0AF69 /* YSQSubjectModel.h */,
+				F165A55D1C3D57FC00B0AF69 /* YSQSubjectModel.m */,
+				F165A55F1C3D582D00B0AF69 /* YSQHotNotesModel.h */,
+				F165A5601C3D582D00B0AF69 /* YSQHotNotesModel.m */,
+				F11743581CBF50F70034447F /* YSQAllDiscountModel.h */,
+				F11743591CBF50F70034447F /* YSQAllDiscountModel.m */,
+				F1E2F1A41CC0BBED00374E55 /* YSQChooseTypeModel.h */,
+				F1E2F1A51CC0BBED00374E55 /* YSQChooseTypeModel.m */,
+				F1A121E71CCE6E53006606F2 /* YSQKitsTypeModel.h */,
+				F1A121E81CCE6E53006606F2 /* YSQKitsTypeModel.m */,
+				F1A121EA1CCF064C006606F2 /* YSQKitsModel.h */,
+				F1A121EB1CCF064C006606F2 /* YSQKitsModel.m */,
+				F164831E1CCF4F41002E7017 /* YSQKitsDetailModel.h */,
+				F164831F1CCF4F41002E7017 /* YSQKitsDetailModel.m */,
+				F1834CBE1CF41DB3005E086F /* YSQAddressModel.h */,
+				F1834CBF1CF41DB3005E086F /* YSQAddressModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F168A9F11C395E1700CBC9CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F10D42CD1C3AB16F0026887A /* YSQBannerCell.h */,
+				F10D42CE1C3AB16F0026887A /* YSQBannerCell.m */,
+				F10D42CF1C3AB16F0026887A /* YSQBannerCell.xib */,
+				F10D42D21C3AB9970026887A /* YSQFoundCell.h */,
+				F10D42D31C3AB9970026887A /* YSQFoundCell.m */,
+				F10D42D41C3AB9970026887A /* YSQFoundCell.xib */,
+				F10D42D71C3ABA650026887A /* YSQFoundTypeCell.h */,
+				F10D42D81C3ABA650026887A /* YSQFoundTypeCell.m */,
+				F10D42D91C3ABA650026887A /* YSQFoundTypeCell.xib */,
+				F10D42DC1C3ABBB60026887A /* YSQDiscountCell.h */,
+				F10D42DD1C3ABBB60026887A /* YSQDiscountCell.m */,
+				F10D42DE1C3ABBB60026887A /* YSQDiscountCell.xib */,
+				F165A54E1C3D4DFD00B0AF69 /* YSQHotNotesCell.h */,
+				F165A54F1C3D4DFD00B0AF69 /* YSQHotNotesCell.m */,
+				F189E2501CA4FE800036488B /* YSQTitleHeaderView.h */,
+				F189E2511CA4FE800036488B /* YSQTitleHeaderView.m */,
+				F189E2531CA501CC0036488B /* YSQFooterView.h */,
+				F189E2541CA501CC0036488B /* YSQFooterView.m */,
+				F11743551CBF4B0F0034447F /* YSQAllDiscountCell.h */,
+				F11743561CBF4B0F0034447F /* YSQAllDiscountCell.m */,
+				F117435B1CBF8DA60034447F /* YSQDiscountOrderView.h */,
+				F117435C1CBF8DA60034447F /* YSQDiscountOrderView.m */,
+				F1E2F19E1CC07DC500374E55 /* YSQDiscountChooseView.h */,
+				F1E2F19F1CC07DC500374E55 /* YSQDiscountChooseView.m */,
+				F1E2F1A11CC083C500374E55 /* YSQSegmentCell.h */,
+				F1E2F1A21CC083C500374E55 /* YSQSegmentCell.m */,
+				F1F696AD1CC7C90600DBDE4A /* YSQCityChooseView.h */,
+				F1F696AE1CC7C90600DBDE4A /* YSQCityChooseView.m */,
+				F1A121ED1CCF0CE6006606F2 /* YSQKitsCell.h */,
+				F1A121EE1CCF0CE6006606F2 /* YSQKitsCell.m */,
+				F164830C1CCF12CB002E7017 /* YSQKitsReusableView.h */,
+				F164830D1CCF12CB002E7017 /* YSQKitsReusableView.m */,
+				F16483121CCF41AC002E7017 /* YSQKitsDetailHeaderView.h */,
+				F16483131CCF41AC002E7017 /* YSQKitsDetailHeaderView.m */,
+				F16483151CCF444F002E7017 /* YSQAuthorInfoCell.h */,
+				F16483161CCF444F002E7017 /* YSQAuthorInfoCell.m */,
+				F164831B1CCF4BBC002E7017 /* YSQKitsIntroCell.h */,
+				F164831C1CCF4BBC002E7017 /* YSQKitsIntroCell.m */,
+				F16483181CCF46EF002E7017 /* YSQRelatedCell.h */,
+				F16483191CCF46EF002E7017 /* YSQRelatedCell.m */,
+				F13D604B1CF42574004941B3 /* YSQAddressCell.h */,
+				F13D604C1CF42574004941B3 /* YSQAddressCell.m */,
+				F13D604E1CF430A9004941B3 /* YSQHotCityCell.h */,
+				F13D604F1CF430A9004941B3 /* YSQHotCityCell.m */,
+				F13D60511CF43AEB004941B3 /* YSQHotCollectionCell.h */,
+				F13D60521CF43AEB004941B3 /* YSQHotCollectionCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F168A9F21C395E1700CBC9CA /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				F168A9F31C395E1700CBC9CA /* Controller */,
+				F168A9F41C395E1700CBC9CA /* Model */,
+				F168A9F51C395E1700CBC9CA /* View */,
+			);
+			name = "我的";
+			path = "MyTravel/我的";
+			sourceTree = "<group>";
+		};
+		F168A9F31C395E1700CBC9CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F150B97D1C8E8B630054E975 /* YSQMineViewController.storyboard */,
+				F150B97F1C8E91CD0054E975 /* YSQMineController.h */,
+				F150B9801C8E91CD0054E975 /* YSQMineController.m */,
+				F1E06C611CFBF1CE008AD4C1 /* YSQFeedBackViewController.h */,
+				F1E06C621CFBF1CE008AD4C1 /* YSQFeedBackViewController.m */,
+				F1885B511CFD208000ECF430 /* YSQUserCollectViewController.h */,
+				F1885B521CFD208000ECF430 /* YSQUserCollectViewController.m */,
+				F14C85121DB10CEB0001ED13 /* YSQChatViewController.h */,
+				F14C85131DB10CEB0001ED13 /* YSQChatViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F168A9F41C395E1700CBC9CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1885B541CFD866F00ECF430 /* YSQUserDAO.h */,
+				F1885B551CFD866F00ECF430 /* YSQUserDAO.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F168A9F51C395E1700CBC9CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1FEF5601CF985880074C0A7 /* YSQMineHeaderView.h */,
+				F1FEF5611CF985880074C0A7 /* YSQMineHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F168A9F71C395E5700CBC9CA /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				F168A9F81C395E8900CBC9CA /* AFAppDotNetAPIClient.h */,
+				F168A9F91C395E8900CBC9CA /* AFAppDotNetAPIClient.m */,
+				F168A9FA1C395E8900CBC9CA /* NetWorkManager.h */,
+				F168A9FB1C395E8900CBC9CA /* NetWorkManager.m */,
+			);
+			name = NetworkManager;
+			path = MyTravel/NetworkManager;
+			sourceTree = "<group>";
+		};
+		F168A9FF1C396AA100CBC9CA /* RootVC */ = {
+			isa = PBXGroup;
+			children = (
+				F168AA001C396AB900CBC9CA /* MainViewController.h */,
+				F168AA011C396AB900CBC9CA /* MainViewController.m */,
+				F1B1E5E91C8C77750097913F /* YSQTabBarController.h */,
+				F1B1E5EA1C8C77750097913F /* YSQTabBarController.m */,
+			);
+			name = RootVC;
+			path = MyTravel/RootVC;
+			sourceTree = "<group>";
+		};
+		F19593081C4FD76800DFDE31 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F19408181C896CE100A9BDB3 /* FastCoder.h */,
+				F19408191C896CE100A9BDB3 /* FastCoder.m */,
+				F194081C1C896CE100A9BDB3 /* YSQLocationStore.h */,
+				F194081D1C896CE100A9BDB3 /* YSQLocationStore.m */,
+				F19408211C896D8500A9BDB3 /* NSObject+YSQStore.h */,
+				F19408221C896D8500A9BDB3 /* NSObject+YSQStore.m */,
+				F19593091C4FD77400DFDE31 /* YSQHelp.h */,
+				F195930A1C4FD77400DFDE31 /* YSQHelp.m */,
+				F1B20EE31D4E5CA400F98E02 /* NSObject+YSQCache.h */,
+				F1B20EE41D4E5CA400F98E02 /* NSObject+YSQCache.m */,
+				F14C85151DB122500001ED13 /* YSQSocket.h */,
+				F14C85161DB122500001ED13 /* YSQSocket.m */,
+			);
+			name = Utils;
+			path = MyTravel/Utils;
+			sourceTree = "<group>";
+		};
+		F19EB33F1C6D8BE900EC40C9 /* HotCityDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F1338DFF1C85E2BC00D53A8E /* YSQGreatestSelectModel.h */,
+				F1338E001C85E2BC00D53A8E /* YSQGreatestSelectModel.m */,
+				F1A64DE31C86E29600E8C70D /* YSQPlayModel.h */,
+				F1A64DE41C86E29600E8C70D /* YSQPlayModel.m */,
+				F1A64DE61C86EBC600E8C70D /* YSQPlayDiscountModel.h */,
+				F1A64DE71C86EBC600E8C70D /* YSQPlayDiscountModel.m */,
+				F1454AF01C8BF263004B1C86 /* YSQCityHotelModel.h */,
+				F1454AF11C8BF263004B1C86 /* YSQCityHotelModel.m */,
+				F1B086441CA2D62E00A33285 /* YSQAllCityModel.h */,
+				F1B086451CA2D62E00A33285 /* YSQAllCityModel.m */,
+				F10DDA311D20BDB8003C30B6 /* YSQCityMapModel.h */,
+				F10DDA321D20BDB8003C30B6 /* YSQCityMapModel.m */,
+				F10DDA3A1D224AEE003C30B6 /* YSQCategoryModel.h */,
+				F10DDA3B1D224AEE003C30B6 /* YSQCategoryModel.m */,
+			);
+			path = HotCityDetail;
+			sourceTree = "<group>";
+		};
+		F1A121E31CCE56E5006606F2 /* XLPlainFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				F1A121E41CCE56E5006606F2 /* XLPlainFlowLayout.h */,
+				F1A121E51CCE56E5006606F2 /* XLPlainFlowLayout.m */,
+			);
+			path = XLPlainFlowLayout;
+			sourceTree = "<group>";
+		};
+		F1A1345E1C525EBA005E1A38 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				F15603741D103B6000C7E70B /* Controller */,
+				F15603751D103B6100C7E70B /* Model */,
+				F15603761D103B6100C7E70B /* View */,
+			);
+			name = WebView;
+			path = MyTravel/WebView;
+			sourceTree = "<group>";
+		};
+		F1BC59711CE9CC7A00628C35 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F1BC59721CE9CC9600628C35 /* YSQLoginViewController.h */,
+				F1BC59731CE9CC9600628C35 /* YSQLoginViewController.m */,
+				F1BC59741CE9CC9600628C35 /* YSQLoginViewController.xib */,
+				F1BC59771CE9DA3D00628C35 /* YSQRegisterViewController.h */,
+				F1BC59781CE9DA3D00628C35 /* YSQRegisterViewController.m */,
+				F1BC59791CE9DA3D00628C35 /* YSQRegisterViewController.xib */,
+			);
+			name = Login;
+			path = MyTravel/Login;
+			sourceTree = "<group>";
+		};
+		F1BEB5911DA4DD14007CB977 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				F1BEB5941DA4DD36007CB977 /* Views */,
+				F1BEB5931DA4DD2F007CB977 /* Models */,
+				F1BEB5921DA4DD24007CB977 /* Controllers */,
+			);
+			name = Live;
+			sourceTree = "<group>";
+		};
+		F1BEB5921DA4DD24007CB977 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1BEB5951DA4DD51007CB977 /* YSQLiveListControllerController.h */,
+				F1BEB5961DA4DD51007CB977 /* YSQLiveListControllerController.m */,
+				F18E4AAE1DA605DA00EFD4E9 /* YSQLiveController.h */,
+				F18E4AAF1DA605DA00EFD4E9 /* YSQLiveController.m */,
+				F1BECA6D1DA62F2A00804736 /* YSQShowYourselfController.h */,
+				F1BECA6E1DA62F2A00804736 /* YSQShowYourselfController.m */,
+				F1BECA6F1DA62F2A00804736 /* YSQShowYourselfController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F1BEB5931DA4DD2F007CB977 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1BEB5981DA4DDCF007CB977 /* YSQLiveItem.h */,
+				F1BEB5991DA4DDCF007CB977 /* YSQLiveItem.m */,
+				F1BEB59B1DA4DEA2007CB977 /* YSQCreatorItem.h */,
+				F1BEB59C1DA4DEA2007CB977 /* YSQCreatorItem.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F1BEB5941DA4DD36007CB977 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1BEB59E1DA4DFE0007CB977 /* YZLiveCell.h */,
+				F1BEB59F1DA4DFE0007CB977 /* YZLiveCell.m */,
+				F1BEB5A01DA4DFE0007CB977 /* YZLiveCell.xib */,
+				F18E4AB11DA6062600EFD4E9 /* YSQLiveCell.h */,
+				F18E4AB21DA6062600EFD4E9 /* YSQLiveCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F1D9B8EF1C562B1C00C3C043 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				F1D9B8F01C562B6200C3C043 /* YSQBaseControllerView.h */,
+				F1D9B8F11C562B6200C3C043 /* YSQBaseControllerView.m */,
+			);
+			name = BaseController;
+			path = MyTravel/BaseController;
+			sourceTree = "<group>";
+		};
+		F1ECA61D1C6449C000A6DC6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1ECA61E1C6449CE00A6DC6D /* YSQTableViewHeaderFooterView.h */,
+				F1ECA61F1C6449CE00A6DC6D /* YSQTableViewHeaderFooterView.m */,
+				F1ECA6241C648EF800A6DC6D /* YSQCommonHeaderCell.h */,
+				F1ECA6251C648EF800A6DC6D /* YSQCommonHeaderCell.m */,
+				F1ECA6271C6498B500A6DC6D /* YSQFreedomCell.h */,
+				F1ECA6281C6498B500A6DC6D /* YSQFreedomCell.m */,
+				F1FD90891C64F85E008BD6EF /* YSQLabelView.h */,
+				F1FD908A1C64F85E008BD6EF /* YSQLabelView.m */,
+				F13E500A1C673A0C003140CD /* YSQCountryCollectionViewCell.h */,
+				F13E500B1C673A0C003140CD /* YSQCountryCollectionViewCell.m */,
+				F13E500D1C675220003140CD /* YSQNormalCountryCell.h */,
+				F13E500E1C675220003140CD /* YSQNormalCountryCell.m */,
+				F19EB3351C6D725800EC40C9 /* YSQCityLocationCell.h */,
+				F19EB3361C6D725800EC40C9 /* YSQCityLocationCell.m */,
+				F19EB3371C6D725800EC40C9 /* YSQCityLocationCell.xib */,
+				F19EB33A1C6D7B8400EC40C9 /* YSQHotelChooseView.h */,
+				F19EB33B1C6D7B8400EC40C9 /* YSQHotelChooseView.m */,
+				F19EB33D1C6D7BB100EC40C9 /* YSQHotelChooseView.xib */,
+				F1338E021C86789800D53A8E /* YSQGreatestChooseCell.h */,
+				F1338E031C86789800D53A8E /* YSQGreatestChooseCell.m */,
+				F1338E081C86CB7B00D53A8E /* YSQPlayCell.h */,
+				F1338E091C86CB7B00D53A8E /* YSQPlayCell.m */,
+				F14E5FB81C883ACB00C212B2 /* YSQLocationHeaderView.h */,
+				F14E5FB91C883ACB00C212B2 /* YSQLocationHeaderView.m */,
+				F1454AED1C8BE891004B1C86 /* YSQHotelCell.h */,
+				F1454AEE1C8BE891004B1C86 /* YSQHotelCell.m */,
+				F1B086411CA2CE1600A33285 /* YSQAllCityCell.h */,
+				F1B086421CA2CE1600A33285 /* YSQAllCityCell.m */,
+				F1624E3A1CC8C01600E274F0 /* YSQCollectionHeaderView.h */,
+				F1624E3B1CC8C01600E274F0 /* YSQCollectionHeaderView.m */,
+				F10DDA341D216975003C30B6 /* YSQScenicSpotCell.h */,
+				F10DDA351D216975003C30B6 /* YSQScenicSpotCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1EEFF6A1C95412E00C13F05 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				F10024ED1CDC421E00C3D209 /* JPush */,
+				F1A121E31CCE56E5006606F2 /* XLPlainFlowLayout */,
+				F12AA3CB1C9EAD2A00FB239A /* SQProgressHUD */,
+				F1EEFF6B1C95413600C13F05 /* YYFPSLabel.h */,
+				F1EEFF6C1C95413600C13F05 /* YYFPSLabel.m */,
+			);
+			name = Vendor;
+			path = MyTravel/Vendor;
+			sourceTree = "<group>";
+		};
+		F1F5F6C91D6EF3AA00CCAB3F /* 商城 */ = {
+			isa = PBXGroup;
+			children = (
+				F1BEB5911DA4DD14007CB977 /* Live */,
+				F1F5F6CA1D6EF3AA00CCAB3F /* Controllers */,
+				F1F5F6CB1D6EF3AA00CCAB3F /* Models */,
+				F1F5F6CC1D6EF3AA00CCAB3F /* Views */,
+			);
+			name = "商城";
+			path = "MyTravel/商城";
+			sourceTree = "<group>";
+		};
+		F1F5F6CA1D6EF3AA00CCAB3F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1F5F6CD1D6EF3D900CCAB3F /* YSQShopController.h */,
+				F1F5F6CE1D6EF3D900CCAB3F /* YSQShopController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F1F5F6CB1D6EF3AA00CCAB3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F145DA001D76A54E0053DA8D /* YSQMallShopModel.h */,
+				F145DA011D76A54E0053DA8D /* YSQMallShopModel.m */,
+				F145DA031D76A6550053DA8D /* YSQHotAreaModel.h */,
+				F145DA041D76A6550053DA8D /* YSQHotAreaModel.m */,
+				F145DA061D76A7440053DA8D /* YSQShopDiscountModel.h */,
+				F145DA071D76A7440053DA8D /* YSQShopDiscountModel.m */,
+				F145DA091D76A8290053DA8D /* YSQMallHotGoodsModel.h */,
+				F145DA0A1D76A8290053DA8D /* YSQMallHotGoodsModel.m */,
+				F145DA0C1D76A88E0053DA8D /* YSQMallMarketModel.h */,
+				F145DA0D1D76A88E0053DA8D /* YSQMallMarketModel.m */,
+				F145DA0F1D76A8B00053DA8D /* YSQMallListModel.h */,
+				F145DA101D76A8B00053DA8D /* YSQMallListModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F1F5F6CC1D6EF3AA00CCAB3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F145D9F61D768FF20053DA8D /* YSQMallTopCell.h */,
+				F145D9F71D768FF20053DA8D /* YSQMallTopCell.m */,
+				F145D9F81D768FF20053DA8D /* YSQMallTopCell.xib */,
+				F145D9FB1D769E300053DA8D /* YSQHotAreaCell.h */,
+				F145D9FC1D769E300053DA8D /* YSQHotAreaCell.m */,
+				F145D9FD1D769E300053DA8D /* YSQHotAreaCell.xib */,
+				F145DA121D76AED90053DA8D /* YSQMarketCell.h */,
+				F145DA131D76AED90053DA8D /* YSQMarketCell.m */,
+				F145DA141D76AED90053DA8D /* YSQMarketCell.xib */,
+				F145DA171D76E2910053DA8D /* YSQMallDiscountHeaderCell.h */,
+				F145DA181D76E2910053DA8D /* YSQMallDiscountHeaderCell.m */,
+				F145DA191D76E2910053DA8D /* YSQMallDiscountHeaderCell.xib */,
+				F145DA1C1D76E51D0053DA8D /* YSQMallDiscountCell.h */,
+				F145DA1D1D76E51D0053DA8D /* YSQMallDiscountCell.m */,
+				F145DA1E1D76E51D0053DA8D /* YSQMallDiscountCell.xib */,
+				F145DA211D76E88D0053DA8D /* YSQMallGoodsCell.h */,
+				F145DA221D76E88D0053DA8D /* YSQMallGoodsCell.m */,
+				F145DA231D76E88D0053DA8D /* YSQMallGoodsCell.xib */,
+				F145DA2B1D76FB310053DA8D /* YSQMallGoodsSuperCell.h */,
+				F145DA2C1D76FB310053DA8D /* YSQMallGoodsSuperCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1F5F6D01D6EFE0F00CCAB3F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F111AEC71D72EC3500E628CB /* Models */,
+				F1F5F6D41D6F162A00CCAB3F /* View */,
+				F1F5F6D11D6EFE5F00CCAB3F /* YSQSearchController.h */,
+				F1F5F6D21D6EFE5F00CCAB3F /* YSQSearchController.m */,
+			);
+			name = Common;
+			path = MyTravel/Common;
+			sourceTree = "<group>";
+		};
+		F1F5F6D41D6F162A00CCAB3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1F5F6D51D6F165F00CCAB3F /* YSQTagView.h */,
+				F1F5F6D61D6F165F00CCAB3F /* YSQTagView.m */,
+				F1CC1E471D6F421B005BE04E /* YSQSearchHeadView.h */,
+				F1CC1E481D6F421B005BE04E /* YSQSearchHeadView.m */,
+				F111AECB1D72EF8900E628CB /* YSQSearchCell.h */,
+				F111AECC1D72EF8900E628CB /* YSQSearchCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F1FD908D1C650385008BD6EF /* CountryModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1FD908E1C6503A0008BD6EF /* YSQContinent.h */,
+				F1FD908F1C6503A0008BD6EF /* YSQContinent.m */,
+				F1BFD2C01C66F81900F96FC3 /* YSQCountry.h */,
+				F1BFD2C11C66F81900F96FC3 /* YSQCountry.m */,
+			);
+			path = CountryModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F168A9141C379C0300CBC9CA /* MyTravel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F168A9421C379C0300CBC9CA /* Build configuration list for PBXNativeTarget "MyTravel" */;
+			buildPhases = (
+				9DDAAD28BFF91F7A451333B7 /* Check Pods Manifest.lock */,
+				F168A9111C379C0300CBC9CA /* Sources */,
+				F168A9121C379C0300CBC9CA /* Frameworks */,
+				F168A9131C379C0300CBC9CA /* Resources */,
+				93EE3020D43BB0C166F3028B /* Embed Pods Frameworks */,
+				08D78B309E773A9E5146E9EF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTravel;
+			productName = MyTravel;
+			productReference = F168A9151C379C0300CBC9CA /* MyTravel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F168A92D1C379C0300CBC9CA /* MyTravelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F168A9451C379C0300CBC9CA /* Build configuration list for PBXNativeTarget "MyTravelTests" */;
+			buildPhases = (
+				F168A92A1C379C0300CBC9CA /* Sources */,
+				F168A92B1C379C0300CBC9CA /* Frameworks */,
+				F168A92C1C379C0300CBC9CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F168A9301C379C0300CBC9CA /* PBXTargetDependency */,
+			);
+			name = MyTravelTests;
+			productName = MyTravelTests;
+			productReference = F168A92E1C379C0300CBC9CA /* MyTravelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F168A9381C379C0300CBC9CA /* MyTravelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F168A9481C379C0300CBC9CA /* Build configuration list for PBXNativeTarget "MyTravelUITests" */;
+			buildPhases = (
+				F168A9351C379C0300CBC9CA /* Sources */,
+				F168A9361C379C0300CBC9CA /* Frameworks */,
+				F168A9371C379C0300CBC9CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F168A93B1C379C0300CBC9CA /* PBXTargetDependency */,
+			);
+			name = MyTravelUITests;
+			productName = MyTravelUITests;
+			productReference = F168A9391C379C0300CBC9CA /* MyTravelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F168A90D1C379C0300CBC9CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YSQ;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = ysq;
+				TargetAttributes = {
+					F168A9141C379C0300CBC9CA = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = KAN8WX649Q;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+					F168A92D1C379C0300CBC9CA = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = F168A9141C379C0300CBC9CA;
+					};
+					F168A9381C379C0300CBC9CA = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = F168A9141C379C0300CBC9CA;
+					};
+				};
+			};
+			buildConfigurationList = F168A9101C379C0300CBC9CA /* Build configuration list for PBXProject "MyTravel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F168A90C1C379C0300CBC9CA;
+			productRefGroup = F168A9161C379C0300CBC9CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F168A9141C379C0300CBC9CA /* MyTravel */,
+				F168A92D1C379C0300CBC9CA /* MyTravelTests */,
+				F168A9381C379C0300CBC9CA /* MyTravelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F168A9131C379C0300CBC9CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10D42D61C3AB9970026887A /* YSQFoundCell.xib in Resources */,
+				F10D42D11C3AB16F0026887A /* YSQBannerCell.xib in Resources */,
+				F10D42DB1C3ABA650026887A /* YSQFoundTypeCell.xib in Resources */,
+				F1BC597B1CE9DA3D00628C35 /* YSQRegisterViewController.xib in Resources */,
+				F145D9FF1D769E300053DA8D /* YSQHotAreaCell.xib in Resources */,
+				F1BC59761CE9CC9600628C35 /* YSQLoginViewController.xib in Resources */,
+				F150B97E1C8E8B630054E975 /* YSQMineViewController.storyboard in Resources */,
+				F10024F61CDC42FF00C3D209 /* PushConfig.plist in Resources */,
+				F19EB33E1C6D7BB100EC40C9 /* YSQHotelChooseView.xib in Resources */,
+				F145DA1B1D76E2910053DA8D /* YSQMallDiscountHeaderCell.xib in Resources */,
+				F1BEB5A21DA4DFE0007CB977 /* YZLiveCell.xib in Resources */,
+				F19E866A1D14342D00A4DB78 /* YSQSearchFriendsCellTableViewCell.xib in Resources */,
+				F145DA251D76E88D0053DA8D /* YSQMallGoodsCell.xib in Resources */,
+				F145DA201D76E51D0053DA8D /* YSQMallDiscountCell.xib in Resources */,
+				F145D9FA1D768FF20053DA8D /* YSQMallTopCell.xib in Resources */,
+				F10D42E01C3ABBB60026887A /* YSQDiscountCell.xib in Resources */,
+				F1BECA711DA62F2A00804736 /* YSQShowYourselfController.xib in Resources */,
+				F145DA161D76AED90053DA8D /* YSQMarketCell.xib in Resources */,
+				F1262ECD1D12EF650036ADF5 /* YSQTravelGuideCell.xib in Resources */,
+				F1BECA731DA631FE00804736 /* Assets.xcassets in Resources */,
+				F19EB3391C6D725800EC40C9 /* YSQCityLocationCell.xib in Resources */,
+				F1262EC61D12EF650036ADF5 /* YSQAskCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F168A92C1C379C0300CBC9CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F168A9371C379C0300CBC9CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08D78B309E773A9E5146E9EF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTravel/Pods-MyTravel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93EE3020D43BB0C166F3028B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTravel/Pods-MyTravel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DDAAD28BFF91F7A451333B7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F168A9111C379C0300CBC9CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F165A5511C3D4DFD00B0AF69 /* YSQHotNotesCell.m in Sources */,
+				F1FEF5621CF985880074C0A7 /* YSQMineHeaderView.m in Sources */,
+				F1262ECC1D12EF650036ADF5 /* YSQTravelGuideCell.m in Sources */,
+				F1BEB59D1DA4DEA2007CB977 /* YSQCreatorItem.m in Sources */,
+				F1262EC41D12EF650036ADF5 /* YSQGroupModel.m in Sources */,
+				F1F696AF1CC7C90600DBDE4A /* YSQCityChooseView.m in Sources */,
+				F145DA111D76A8B00053DA8D /* YSQMallListModel.m in Sources */,
+				F145D9F51D7687BC0053DA8D /* NSString+SQAdd.m in Sources */,
+				F1D9B8F21C562B6200C3C043 /* YSQBaseControllerView.m in Sources */,
+				F14C85141DB10CEB0001ED13 /* YSQChatViewController.m in Sources */,
+				F168AA0B1C396B6D00CBC9CA /* RecomendViewController.m in Sources */,
+				F1F5F6D71D6F165F00CCAB3F /* YSQTagView.m in Sources */,
+				F150B9811C8E91CD0054E975 /* YSQMineController.m in Sources */,
+				F145DA081D76A7440053DA8D /* YSQShopDiscountModel.m in Sources */,
+				F16483111CCF3FF0002E7017 /* YSQStrategyDetailController.m in Sources */,
+				F1B086401CA2CDBF00A33285 /* YSQAllCityController.m in Sources */,
+				F1B20EE51D4E5CA400F98E02 /* NSObject+YSQCache.m in Sources */,
+				F145DA151D76AED90053DA8D /* YSQMarketCell.m in Sources */,
+				F156037C1D103F1B00C7E70B /* YSQBookCell.m in Sources */,
+				F10D42DF1C3ABBB60026887A /* YSQDiscountCell.m in Sources */,
+				F10D42D01C3AB16F0026887A /* YSQBannerCell.m in Sources */,
+				F168A9FC1C395E8900CBC9CA /* AFAppDotNetAPIClient.m in Sources */,
+				F1BBC00D1CDBA096006EF24B /* YSQHotelViewController.m in Sources */,
+				F19E86601D140DDE00A4DB78 /* YSQBBSCell.m in Sources */,
+				F168AA021C396AB900CBC9CA /* MainViewController.m in Sources */,
+				F145DA021D76A54E0053DA8D /* YSQMallShopModel.m in Sources */,
+				F1338E0A1C86CB7B00D53A8E /* YSQPlayCell.m in Sources */,
+				F189E25B1CA5309A0036488B /* SQProgressHUD.m in Sources */,
+				F117435D1CBF8DA60034447F /* YSQDiscountOrderView.m in Sources */,
+				F145D9F91D768FF20053DA8D /* YSQMallTopCell.m in Sources */,
+				F1CC1E491D6F421B005BE04E /* YSQSearchHeadView.m in Sources */,
+				F1E2F1A31CC083C500374E55 /* YSQSegmentCell.m in Sources */,
+				F16483201CCF4F41002E7017 /* YSQKitsDetailModel.m in Sources */,
+				F19408261C89867F00A9BDB3 /* YSQForumDetailController.m in Sources */,
+				F13D60531CF43AEB004941B3 /* YSQHotCollectionCell.m in Sources */,
+				F1454AF21C8BF263004B1C86 /* YSQCityHotelModel.m in Sources */,
+				F1885B531CFD208000ECF430 /* YSQUserCollectViewController.m in Sources */,
+				F17F61611D15538800F71405 /* YSQHotBBSOtherCell.m in Sources */,
+				F1506D301C5E5A1200335BF6 /* YSQNewDiscount.m in Sources */,
+				F1624E3C1CC8C01600E274F0 /* YSQCollectionHeaderView.m in Sources */,
+				F1A121EC1CCF064C006606F2 /* YSQKitsModel.m in Sources */,
+				F1262EC01D12EF650036ADF5 /* YSQBBSCountModel.m in Sources */,
+				F10D42D51C3AB9970026887A /* YSQFoundCell.m in Sources */,
+				F15603731D1034FC00C7E70B /* YSQHTMLModel.m in Sources */,
+				F18E4AB31DA6062600EFD4E9 /* YSQLiveCell.m in Sources */,
+				F13E500F1C675220003140CD /* YSQNormalCountryCell.m in Sources */,
+				F145DA0E1D76A88E0053DA8D /* YSQMallMarketModel.m in Sources */,
+				F111AECD1D72EF8900E628CB /* YSQSearchCell.m in Sources */,
+				F1A134611C525ED5005E1A38 /* YSQWebViewController.m in Sources */,
+				F168A91D1C379C0300CBC9CA /* AppDelegate.m in Sources */,
+				F16483171CCF444F002E7017 /* YSQAuthorInfoCell.m in Sources */,
+				F1338E071C86CB4400D53A8E /* YSQPlayViewController.m in Sources */,
+				F165A5551C3D576E00B0AF69 /* YSQRecommendModel.m in Sources */,
+				F1A1AB4E1CD4BC9100B4D496 /* YSQBaseForumController.m in Sources */,
+				F15603791D103BAB00C7E70B /* YSQBookCoverView.m in Sources */,
+				F1A64DE81C86EBC600E8C70D /* YSQPlayDiscountModel.m in Sources */,
+				F1A121EF1CCF0CE6006606F2 /* YSQKitsCell.m in Sources */,
+				F1B086461CA2D62E00A33285 /* YSQAllCityModel.m in Sources */,
+				F19408231C896D8500A9BDB3 /* NSObject+YSQStore.m in Sources */,
+				F11743571CBF4B0F0034447F /* YSQAllDiscountCell.m in Sources */,
+				F14C85171DB122500001ED13 /* YSQSocket.m in Sources */,
+				F18E4AB61DA60E6100EFD4E9 /* UIImageView+YSQAdd.m in Sources */,
+				F156037F1D10F94E00C7E70B /* YSQBookListViewController.m in Sources */,
+				F10DDA391D224A99003C30B6 /* YSQMoreCategoriesViewController.m in Sources */,
+				F164C1521CA3B40F0065FCCF /* YSQFreedomController.m in Sources */,
+				F165A5611C3D582D00B0AF69 /* YSQHotNotesModel.m in Sources */,
+				F145D9FE1D769E300053DA8D /* YSQHotAreaCell.m in Sources */,
+				F1262ED01D12F2BA0036ADF5 /* YSQHotBBSCell.m in Sources */,
+				F145DA0B1D76A8290053DA8D /* YSQMallHotGoodsModel.m in Sources */,
+				F16483141CCF41AC002E7017 /* YSQKitsDetailHeaderView.m in Sources */,
+				F1262EC81D12EF650036ADF5 /* YSQForumCollectionCell.m in Sources */,
+				F10DDA3C1D224AEE003C30B6 /* YSQCategoryModel.m in Sources */,
+				F1F5F6CF1D6EF3D900CCAB3F /* YSQShopController.m in Sources */,
+				F164830E1CCF12CB002E7017 /* YSQKitsReusableView.m in Sources */,
+				F1BEB5A11DA4DFE0007CB977 /* YZLiveCell.m in Sources */,
+				F1262EC31D12EF650036ADF5 /* YSQForumModel.m in Sources */,
+				F1262EC21D12EF650036ADF5 /* YSQForumDetailModel.m in Sources */,
+				F1E06C631CFBF1CE008AD4C1 /* YSQFeedBackViewController.m in Sources */,
+				F1D9B8F51C562FC800C3C043 /* YSQDistinctViewController.m in Sources */,
+				F1BC597A1CE9DA3D00628C35 /* YSQRegisterViewController.m in Sources */,
+				F17F61581D14DDCB00F71405 /* YSQHotBBSViewController.m in Sources */,
+				F13D60501CF430A9004941B3 /* YSQHotCityCell.m in Sources */,
+				F1BEB59A1DA4DDCF007CB977 /* YSQLiveItem.m in Sources */,
+				F1B086431CA2CE1600A33285 /* YSQAllCityCell.m in Sources */,
+				F1ECA6291C6498B500A6DC6D /* YSQFreedomCell.m in Sources */,
+				F168AA081C396B3300CBC9CA /* BBSViewController.m in Sources */,
+				F1B1E5EB1C8C77750097913F /* YSQTabBarController.m in Sources */,
+				F1506D2F1C5E5A1200335BF6 /* YSQHotCity.m in Sources */,
+				F1EEFF6D1C95413600C13F05 /* YYFPSLabel.m in Sources */,
+				F17F7E4D1DA2B9120082651A /* YSQCustomTableView.m in Sources */,
+				F1BFD2C21C66F81900F96FC3 /* YSQCountry.m in Sources */,
+				F1262EBF1D12EF650036ADF5 /* YSQAskModel.m in Sources */,
+				F145DA2D1D76FB310053DA8D /* YSQMallGoodsSuperCell.m in Sources */,
+				F1A121E91CCE6E53006606F2 /* YSQKitsTypeModel.m in Sources */,
+				F145DA051D76A6550053DA8D /* YSQHotAreaModel.m in Sources */,
+				F164831D1CCF4BBC002E7017 /* YSQKitsIntroCell.m in Sources */,
+				F165A55B1C3D57D200B0AF69 /* YSQSlideModel.m in Sources */,
+				F1F5F6D31D6EFE5F00CCAB3F /* YSQSearchController.m in Sources */,
+				F165A5581C3D579B00B0AF69 /* YSQDiscountModel.m in Sources */,
+				F10D42DA1C3ABA650026887A /* YSQFoundTypeCell.m in Sources */,
+				F1A121E21CCE54C4006606F2 /* YSQStrategyViewController.m in Sources */,
+				F1262EC91D12EF650036ADF5 /* YSQForumHeaderView.m in Sources */,
+				F1262ECB1D12EF650036ADF5 /* YSQTopFlagView.m in Sources */,
+				F1D233801CBE444800418312 /* YSQSelectOverseasController.m in Sources */,
+				F111AECA1D72EC5500E628CB /* YSQSearchResultModel.m in Sources */,
+				F1F4D6BE1CA406FB00E58AE5 /* YSQFreeChildViewController.m in Sources */,
+				F1FD90901C6503A0008BD6EF /* YSQContinent.m in Sources */,
+				F168A91A1C379C0300CBC9CA /* main.m in Sources */,
+				F145DA1A1D76E2910053DA8D /* YSQMallDiscountHeaderCell.m in Sources */,
+				F189E2521CA4FE800036488B /* YSQTitleHeaderView.m in Sources */,
+				F10DDA331D20BDB8003C30B6 /* YSQCityMapModel.m in Sources */,
+				F14E5FBA1C883ACB00C212B2 /* YSQLocationHeaderView.m in Sources */,
+				F1E2F1A61CC0BBED00374E55 /* YSQChooseTypeModel.m in Sources */,
+				F1454AF51C8BF9E0004B1C86 /* YSQHotelController.m in Sources */,
+				F13E500C1C673A0C003140CD /* YSQCountryCollectionViewCell.m in Sources */,
+				F1BECA701DA62F2A00804736 /* YSQShowYourselfController.m in Sources */,
+				F19EB33C1C6D7B8400EC40C9 /* YSQHotelChooseView.m in Sources */,
+				F19EB3341C6D71A400EC40C9 /* YSQCityDetailViewController.m in Sources */,
+				F1338DFE1C85D70900D53A8E /* YSQGreatestChooseController.m in Sources */,
+				F1454AEF1C8BE891004B1C86 /* YSQHotelCell.m in Sources */,
+				F1ECA6201C6449CE00A6DC6D /* YSQTableViewHeaderFooterView.m in Sources */,
+				F19408201C896CE100A9BDB3 /* YSQLocationStore.m in Sources */,
+				F10DDA301D20A1E6003C30B6 /* YSQShowLocationViewController.m in Sources */,
+				F189E2581CA521070036488B /* YSQAllFoundViewController.m in Sources */,
+				F1262EC11D12EF650036ADF5 /* YSQCompanyModel.m in Sources */,
+				F17F615E1D14F47600F71405 /* YSQBBSContentViewController.m in Sources */,
+				F1834CBD1CF41D26005E086F /* YSQAddressViewController.m in Sources */,
+				F13870E51D0D9F6200F249A1 /* YSQReadBookViewController.m in Sources */,
+				F1FD908B1C64F85E008BD6EF /* YSQLabelView.m in Sources */,
+				F164831A1CCF46EF002E7017 /* YSQRelatedCell.m in Sources */,
+				F1ECA6261C648EF800A6DC6D /* YSQCommonHeaderCell.m in Sources */,
+				F165A54D1C3D452B00B0AF69 /* YSQNavgationController.m in Sources */,
+				F10DDA361D216975003C30B6 /* YSQScenicSpotCell.m in Sources */,
+				F145DA1F1D76E51D0053DA8D /* YSQMallDiscountCell.m in Sources */,
+				F194081E1C896CE100A9BDB3 /* FastCoder.m in Sources */,
+				F189E2551CA501CC0036488B /* YSQFooterView.m in Sources */,
+				F19E865D1D13CA6500A4DB78 /* YSQHotBBSModel.m in Sources */,
+				F18E4AB01DA605DA00EFD4E9 /* YSQLiveController.m in Sources */,
+				F1BC59751CE9CC9600628C35 /* YSQLoginViewController.m in Sources */,
+				F1A121E61CCE56E5006606F2 /* XLPlainFlowLayout.m in Sources */,
+				F1262ECA1D12EF650036ADF5 /* YSQNewInfoCell.m in Sources */,
+				F165A55E1C3D57FC00B0AF69 /* YSQSubjectModel.m in Sources */,
+				F1BEB5971DA4DD51007CB977 /* YSQLiveListControllerController.m in Sources */,
+				F11743541CBF3D500034447F /* YSQAllDiscountViewController.m in Sources */,
+				F1262EC71D12EF650036ADF5 /* YSQForumCell.m in Sources */,
+				F19EB3381C6D725800EC40C9 /* YSQCityLocationCell.m in Sources */,
+				F1262EC51D12EF650036ADF5 /* YSQAskCell.m in Sources */,
+				F1834CC01CF41DB3005E086F /* YSQAddressModel.m in Sources */,
+				F145DA241D76E88D0053DA8D /* YSQMallGoodsCell.m in Sources */,
+				F1885B561CFD866F00ECF430 /* YSQUserDAO.m in Sources */,
+				F17F615B1D14E6AA00F71405 /* YSQSearchFriendsViewController.m in Sources */,
+				F1338E041C86789800D53A8E /* YSQGreatestChooseCell.m in Sources */,
+				F1A64DE51C86E29600E8C70D /* YSQPlayModel.m in Sources */,
+				F117435A1CBF50F70034447F /* YSQAllDiscountModel.m in Sources */,
+				F168A9FD1C395E8900CBC9CA /* NetWorkManager.m in Sources */,
+				F19E86691D14342D00A4DB78 /* YSQSearchFriendsCellTableViewCell.m in Sources */,
+				F168AA051C396B2400CBC9CA /* DestinationViewController.m in Sources */,
+				F1E2F1A01CC07DC500374E55 /* YSQDiscountChooseView.m in Sources */,
+				F195930B1C4FD77400DFDE31 /* YSQHelp.m in Sources */,
+				F1338E011C85E2BC00D53A8E /* YSQGreatestSelectModel.m in Sources */,
+				F1506D2E1C5E5A1200335BF6 /* YSQCountryDetail.m in Sources */,
+				F13D604D1CF42574004941B3 /* YSQAddressCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F168A92A1C379C0300CBC9CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F168A9331C379C0300CBC9CA /* MyTravelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F168A9351C379C0300CBC9CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F168A93E1C379C0300CBC9CA /* MyTravelUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F168A9301C379C0300CBC9CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F168A9141C379C0300CBC9CA /* MyTravel */;
+			targetProxy = F168A92F1C379C0300CBC9CA /* PBXContainerItemProxy */;
+		};
+		F168A93B1C379C0300CBC9CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F168A9141C379C0300CBC9CA /* MyTravel */;
+			targetProxy = F168A93A1C379C0300CBC9CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F168A9401C379C0300CBC9CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chang Xu (S9NZMVDT2M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chang Xu (S9NZMVDT2M)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "1e50689c-db70-4ad5-9653-01389afad013";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F168A9411C379C0300CBC9CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chang Xu (S9NZMVDT2M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chang Xu (S9NZMVDT2M)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "1e50689c-db70-4ad5-9653-01389afad013";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F168A9431C379C0300CBC9CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F23A080CADAB25CA85D2C95 /* Pods-MyTravel.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyTravel",
+				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyTravel/MyTravelPch.pch";
+				INFOPLIST_FILE = MyTravel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyTravel/Vendor/JPush",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MJRefresh\"",
+					"-l\"RDVTabBarController\"",
+					"-l\"SDCycleScrollView\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ysq.MyTravel1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Debug;
+		};
+		F168A9441C379C0300CBC9CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BE42A129C0B2936FA4413E6 /* Pods-MyTravel.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyTravel",
+				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyTravel/MyTravelPch.pch";
+				INFOPLIST_FILE = MyTravel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyTravel/Vendor/JPush",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MJRefresh\"",
+					"-l\"RDVTabBarController\"",
+					"-l\"SDCycleScrollView\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ysq.MyTravel1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Release;
+		};
+		F168A9461C379C0300CBC9CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MyTravelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ysq.MyTravelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTravel.app/MyTravel";
+			};
+			name = Debug;
+		};
+		F168A9471C379C0300CBC9CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MyTravelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ysq.MyTravelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTravel.app/MyTravel";
+			};
+			name = Release;
+		};
+		F168A9491C379C0300CBC9CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MyTravelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ysq.MyTravelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_TARGET_NAME = MyTravel;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F168A94A1C379C0300CBC9CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MyTravelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ysq.MyTravelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_TARGET_NAME = MyTravel;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F168A9101C379C0300CBC9CA /* Build configuration list for PBXProject "MyTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F168A9401C379C0300CBC9CA /* Debug */,
+				F168A9411C379C0300CBC9CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F168A9421C379C0300CBC9CA /* Build configuration list for PBXNativeTarget "MyTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F168A9431C379C0300CBC9CA /* Debug */,
+				F168A9441C379C0300CBC9CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F168A9451C379C0300CBC9CA /* Build configuration list for PBXNativeTarget "MyTravelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F168A9461C379C0300CBC9CA /* Debug */,
+				F168A9471C379C0300CBC9CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F168A9481C379C0300CBC9CA /* Build configuration list for PBXNativeTarget "MyTravelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F168A9491C379C0300CBC9CA /* Debug */,
+				F168A94A1C379C0300CBC9CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F168A90D1C379C0300CBC9CA /* Project object */;
+}

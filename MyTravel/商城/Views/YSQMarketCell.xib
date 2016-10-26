@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="178" id="KGk-i7-Jjw" customClass="YSQMarketCell">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="177.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tj-hX-sVh">
+                        <rect key="frame" x="192" y="0.0" width="187" height="86.5"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <action selector="topAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2lg-Uq-0vO"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiF-WP-wi3">
+                        <rect key="frame" x="192" y="91.5" width="187" height="86"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <action selector="bottomAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yDY-fj-V1r"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVw-Ko-38U">
+                        <rect key="frame" x="0.0" y="0.0" width="187" height="177.5"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <action selector="bigAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2ti-RM-hBb"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IiF-WP-wi3" firstAttribute="top" secondItem="4Tj-hX-sVh" secondAttribute="bottom" constant="5" id="2NO-ft-uTz"/>
+                    <constraint firstItem="IiF-WP-wi3" firstAttribute="top" secondItem="4Tj-hX-sVh" secondAttribute="bottom" constant="5" id="7dG-38-NcN"/>
+                    <constraint firstAttribute="trailing" secondItem="4Tj-hX-sVh" secondAttribute="trailing" id="7kJ-Nb-1Ce"/>
+                    <constraint firstItem="rVw-Ko-38U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BV2-Qh-aZs"/>
+                    <constraint firstItem="4Tj-hX-sVh" firstAttribute="width" secondItem="rVw-Ko-38U" secondAttribute="width" id="GKi-AD-baM"/>
+                    <constraint firstItem="rVw-Ko-38U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KbK-VF-jqN"/>
+                    <constraint firstAttribute="bottom" secondItem="rVw-Ko-38U" secondAttribute="bottom" id="NCF-al-AXz"/>
+                    <constraint firstItem="IiF-WP-wi3" firstAttribute="leading" secondItem="4Tj-hX-sVh" secondAttribute="leading" id="RQ8-14-Sg2"/>
+                    <constraint firstItem="4Tj-hX-sVh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TQS-w4-xxU"/>
+                    <constraint firstAttribute="trailing" secondItem="IiF-WP-wi3" secondAttribute="trailing" id="YOj-Lk-sl0"/>
+                    <constraint firstItem="IiF-WP-wi3" firstAttribute="width" secondItem="rVw-Ko-38U" secondAttribute="width" id="aFe-yI-ocL"/>
+                    <constraint firstAttribute="bottom" secondItem="IiF-WP-wi3" secondAttribute="bottom" id="bF0-IB-QfD"/>
+                    <constraint firstItem="4Tj-hX-sVh" firstAttribute="leading" secondItem="rVw-Ko-38U" secondAttribute="trailing" constant="5" id="ctD-NI-vc8"/>
+                    <constraint firstItem="IiF-WP-wi3" firstAttribute="height" secondItem="4Tj-hX-sVh" secondAttribute="height" id="qhy-jZ-26p"/>
+                    <constraint firstItem="4Tj-hX-sVh" firstAttribute="leading" secondItem="rVw-Ko-38U" secondAttribute="trailing" constant="5" id="xHP-cm-qDm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bigPic" destination="rVw-Ko-38U" id="PbK-DT-AFr"/>
+                <outlet property="bottomPic" destination="IiF-WP-wi3" id="fZo-mN-qaL"/>
+                <outlet property="topPic" destination="4Tj-hX-sVh" id="cqu-pD-Cds"/>
+            </connections>
+            <point key="canvasLocation" x="277.5" y="253"/>
+        </tableViewCell>
+    </objects>
+</document>
