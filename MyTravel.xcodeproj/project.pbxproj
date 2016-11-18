@@ -10,6 +10,7 @@
 		1D8595557AB277FB682275D2 /* libPods-MyTravel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5222845D6996521B790AFD /* libPods-MyTravel.a */; };
 		8BC1225E1DDD9ABC00A9106E /* UIViewController+YSQAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1225D1DDD9ABC00A9106E /* UIViewController+YSQAdd.m */; };
 		8BC122611DDD9AFD00A9106E /* YSQBaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC122601DDD9AFD00A9106E /* YSQBaseNavController.m */; };
+		8BC122641DDD9FA500A9106E /* ScreenShotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC122631DDD9FA500A9106E /* ScreenShotView.m */; };
 		8BC122661DDE910700A9106E /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC122651DDE910700A9106E /* libAFNetworking.a */; };
 		8BC122681DDE910B00A9106E /* libCocoaAsyncSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC122671DDE910B00A9106E /* libCocoaAsyncSocket.a */; };
 		8BC1226A1DDE910E00A9106E /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC122691DDE910E00A9106E /* libFMDB.a */; };
