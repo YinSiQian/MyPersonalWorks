@@ -8,6 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		1D8595557AB277FB682275D2 /* libPods-MyTravel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5222845D6996521B790AFD /* libPods-MyTravel.a */; };
+		8BC1225E1DDD9ABC00A9106E /* UIViewController+YSQAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1225D1DDD9ABC00A9106E /* UIViewController+YSQAdd.m */; };
+		8BC122611DDD9AFD00A9106E /* YSQBaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC122601DDD9AFD00A9106E /* YSQBaseNavController.m */; };
+		8BC122661DDE910700A9106E /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC122651DDE910700A9106E /* libAFNetworking.a */; };
+		8BC122681DDE910B00A9106E /* libCocoaAsyncSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC122671DDE910B00A9106E /* libCocoaAsyncSocket.a */; };
+		8BC1226A1DDE910E00A9106E /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC122691DDE910E00A9106E /* libFMDB.a */; };
+		8BC1226C1DDE911300A9106E /* libHMSegmentedControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC1226B1DDE911300A9106E /* libHMSegmentedControl.a */; };
+		8BC1226E1DDE911600A9106E /* libJSQMessagesViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC1226D1DDE911600A9106E /* libJSQMessagesViewController.a */; };
+		8BC122701DDE911A00A9106E /* libJSQSystemSoundPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC1226F1DDE911A00A9106E /* libJSQSystemSoundPlayer.a */; };
+		8BC122721DDE911D00A9106E /* libLFLiveKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC122711DDE911D00A9106E /* libLFLiveKit.a */; };
+		8BC122741DDE912000A9106E /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC122731DDE912000A9106E /* libMasonry.a */; };
+		8BC122761DDE912400A9106E /* libMJRefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC122751DDE912400A9106E /* libMJRefresh.a */; };
+		8BC122781DDE912700A9106E /* libRDVTabBarController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC122771DDE912700A9106E /* libRDVTabBarController.a */; };
+		8BC1227A1DDE912B00A9106E /* libRealReachability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC122791DDE912B00A9106E /* libRealReachability.a */; };
+		8BC1227C1DDE912F00A9106E /* libSDCycleScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC1227B1DDE912F00A9106E /* libSDCycleScrollView.a */; };
+		8BC1227E1DDE913400A9106E /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC1227D1DDE913400A9106E /* libSDWebImage.a */; };
+		8BC122801DDE913800A9106E /* libSSZipArchive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC1227F1DDE913800A9106E /* libSSZipArchive.a */; };
+		8BC122821DDE913B00A9106E /* libYYKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC122811DDE913B00A9106E /* libYYKit.a */; };
 		F10024F01CDC423300C3D209 /* jpush-ios-2.1.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F10024EE1CDC423300C3D209 /* jpush-ios-2.1.6.a */; };
 		F10024F21CDC426000C3D209 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10024F11CDC426000C3D209 /* CFNetwork.framework */; };
 		F10024F41CDC427500C3D209 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10024F31CDC427500C3D209 /* CoreTelephony.framework */; };
@@ -158,22 +175,6 @@
 		F1A1AB4E1CD4BC9100B4D496 /* YSQBaseForumController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A1AB4D1CD4BC9100B4D496 /* YSQBaseForumController.m */; };
 		F1A64DE51C86E29600E8C70D /* YSQPlayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A64DE41C86E29600E8C70D /* YSQPlayModel.m */; };
 		F1A64DE81C86EBC600E8C70D /* YSQPlayDiscountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A64DE71C86EBC600E8C70D /* YSQPlayDiscountModel.m */; };
-		F1A98CCF1DC0CF5200534B15 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CBF1DC0CF5200534B15 /* libAFNetworking.a */; };
-		F1A98CD01DC0CF5200534B15 /* libCocoaAsyncSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC01DC0CF5200534B15 /* libCocoaAsyncSocket.a */; };
-		F1A98CD11DC0CF5200534B15 /* libFDFullscreenPopGesture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC11DC0CF5200534B15 /* libFDFullscreenPopGesture.a */; };
-		F1A98CD21DC0CF5200534B15 /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC21DC0CF5200534B15 /* libFMDB.a */; };
-		F1A98CD31DC0CF5200534B15 /* libHMSegmentedControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC31DC0CF5200534B15 /* libHMSegmentedControl.a */; };
-		F1A98CD41DC0CF5200534B15 /* libJSQMessagesViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC41DC0CF5200534B15 /* libJSQMessagesViewController.a */; };
-		F1A98CD51DC0CF5200534B15 /* libJSQSystemSoundPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC51DC0CF5200534B15 /* libJSQSystemSoundPlayer.a */; };
-		F1A98CD61DC0CF5200534B15 /* libLFLiveKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC61DC0CF5200534B15 /* libLFLiveKit.a */; };
-		F1A98CD71DC0CF5200534B15 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC71DC0CF5200534B15 /* libMasonry.a */; };
-		F1A98CD81DC0CF5200534B15 /* libMJRefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC81DC0CF5200534B15 /* libMJRefresh.a */; };
-		F1A98CD91DC0CF5200534B15 /* libRDVTabBarController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CC91DC0CF5200534B15 /* libRDVTabBarController.a */; };
-		F1A98CDA1DC0CF5200534B15 /* libRealReachability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CCA1DC0CF5200534B15 /* libRealReachability.a */; };
-		F1A98CDB1DC0CF5200534B15 /* libSDCycleScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CCB1DC0CF5200534B15 /* libSDCycleScrollView.a */; };
-		F1A98CDC1DC0CF5200534B15 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CCC1DC0CF5200534B15 /* libSDWebImage.a */; };
-		F1A98CDD1DC0CF5200534B15 /* libSSZipArchive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CCD1DC0CF5200534B15 /* libSSZipArchive.a */; };
-		F1A98CDE1DC0CF5200534B15 /* libYYKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A98CCE1DC0CF5200534B15 /* libYYKit.a */; };
 		F1B086401CA2CDBF00A33285 /* YSQAllCityController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0863F1CA2CDBF00A33285 /* YSQAllCityController.m */; };
 		F1B086431CA2CE1600A33285 /* YSQAllCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B086421CA2CE1600A33285 /* YSQAllCityCell.m */; };
 		F1B086461CA2D62E00A33285 /* YSQAllCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B086451CA2D62E00A33285 /* YSQAllCityModel.m */; };
@@ -246,6 +247,27 @@
 /* Begin PBXFileReference section */
 		3BE42A129C0B2936FA4413E6 /* Pods-MyTravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTravel.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTravel/Pods-MyTravel.release.xcconfig"; sourceTree = "<group>"; };
 		4F23A080CADAB25CA85D2C95 /* Pods-MyTravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTravel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTravel/Pods-MyTravel.debug.xcconfig"; sourceTree = "<group>"; };
+		8BC1225C1DDD9ABC00A9106E /* UIViewController+YSQAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YSQAdd.h"; sourceTree = "<group>"; };
+		8BC1225D1DDD9ABC00A9106E /* UIViewController+YSQAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YSQAdd.m"; sourceTree = "<group>"; };
+		8BC1225F1DDD9AFD00A9106E /* YSQBaseNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQBaseNavController.h; sourceTree = "<group>"; };
+		8BC122601DDD9AFD00A9106E /* YSQBaseNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQBaseNavController.m; sourceTree = "<group>"; };
+		8BC122621DDD9FA500A9106E /* ScreenShotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShotView.h; sourceTree = "<group>"; };
+		8BC122631DDD9FA500A9106E /* ScreenShotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenShotView.m; sourceTree = "<group>"; };
+		8BC122651DDE910700A9106E /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-avrnfbfynnwnovbhcmemvhyyglxl/Build/Products/Debug-iphonesimulator/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
+		8BC122671DDE910B00A9106E /* libCocoaAsyncSocket.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCocoaAsyncSocket.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-avrnfbfynnwnovbhcmemvhyyglxl/Build/Products/Debug-iphonesimulator/CocoaAsyncSocket/libCocoaAsyncSocket.a"; sourceTree = "<group>"; };
+		8BC122691DDE910E00A9106E /* libFMDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMDB.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-avrnfbfynnwnovbhcmemvhyyglxl/Build/Products/Debug-iphonesimulator/FMDB/libFMDB.a"; sourceTree = "<group>"; };
+		8BC1226B1DDE911300A9106E /* libHMSegmentedControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHMSegmentedControl.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-avrnfbfynnwnovbhcmemvhyyglxl/Build/Products/Debug-iphonesimulator/HMSegmentedControl/libHMSegmentedControl.a"; sourceTree = "<group>"; };
+		8BC1226D1DDE911600A9106E /* libJSQMessagesViewController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJSQMessagesViewController.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-avrnfbfynnwnovbhcmemvhyyglxl/Build/Products/Debug-iphonesimulator/JSQMessagesViewController/libJSQMessagesViewController.a"; sourceTree = "<group>"; };
+		8BC1226F1DDE911A00A9106E /* libJSQSystemSoundPlayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJSQSystemSoundPlayer.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-avrnfbfynnwnovbhcmemvhyyglxl/Build/Products/Debug-iphonesimulator/JSQSystemSoundPlayer/libJSQSystemSoundPlayer.a"; sourceTree = "<group>"; };
+		8BC122711DDE911D00A9106E /* libLFLiveKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLFLiveKit.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-avrnfbfynnwnovbhcmemvhyyglxl/Build/Products/Debug-iphonesimulator/LFLiveKit/libLFLiveKit.a"; sourceTree = "<group>"; };
+		8BC122731DDE912000A9106E /* libMasonry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMasonry.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-avrnfbfynnwnovbhcmemvhyyglxl/Build/Products/Debug-iphonesimulator/Masonry/libMasonry.a"; sourceTree = "<group>"; };
+		8BC122751DDE912400A9106E /* libMJRefresh.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMJRefresh.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-avrnfbfynnwnovbhcmemvhyyglxl/Build/Products/Debug-iphonesimulator/MJRefresh/libMJRefresh.a"; sourceTree = "<group>"; };
+		8BC122771DDE912700A9106E /* libRDVTabBarController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRDVTabBarController.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-avrnfbfynnwnovbhcmemvhyyglxl/Build/Products/Debug-iphonesimulator/RDVTabBarController/libRDVTabBarController.a"; sourceTree = "<group>"; };
+		8BC122791DDE912B00A9106E /* libRealReachability.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRealReachability.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-avrnfbfynnwnovbhcmemvhyyglxl/Build/Products/Debug-iphonesimulator/RealReachability/libRealReachability.a"; sourceTree = "<group>"; };
+		8BC1227B1DDE912F00A9106E /* libSDCycleScrollView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDCycleScrollView.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-avrnfbfynnwnovbhcmemvhyyglxl/Build/Products/Debug-iphonesimulator/SDCycleScrollView/libSDCycleScrollView.a"; sourceTree = "<group>"; };
+		8BC1227D1DDE913400A9106E /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-avrnfbfynnwnovbhcmemvhyyglxl/Build/Products/Debug-iphonesimulator/SDWebImage/libSDWebImage.a"; sourceTree = "<group>"; };
+		8BC1227F1DDE913800A9106E /* libSSZipArchive.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSSZipArchive.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-avrnfbfynnwnovbhcmemvhyyglxl/Build/Products/Debug-iphonesimulator/SSZipArchive/libSSZipArchive.a"; sourceTree = "<group>"; };
+		8BC122811DDE913B00A9106E /* libYYKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYYKit.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-avrnfbfynnwnovbhcmemvhyyglxl/Build/Products/Debug-iphonesimulator/YYKit/libYYKit.a"; sourceTree = "<group>"; };
 		DD5222845D6996521B790AFD /* libPods-MyTravel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyTravel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10024EE1CDC423300C3D209 /* jpush-ios-2.1.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-2.1.6.a"; sourceTree = "<group>"; };
 		F10024EF1CDC423300C3D209 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
@@ -536,22 +558,6 @@
 		F1A64DE61C86EBC600E8C70D /* YSQPlayDiscountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQPlayDiscountModel.h; sourceTree = "<group>"; };
 		F1A64DE71C86EBC600E8C70D /* YSQPlayDiscountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQPlayDiscountModel.m; sourceTree = "<group>"; };
 		F1A93E2C1D5438D2000BF4BE /* MyTravel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTravel.entitlements; sourceTree = "<group>"; };
-		F1A98CBF1DC0CF5200534B15 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
-		F1A98CC01DC0CF5200534B15 /* libCocoaAsyncSocket.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCocoaAsyncSocket.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/CocoaAsyncSocket/libCocoaAsyncSocket.a"; sourceTree = "<group>"; };
-		F1A98CC11DC0CF5200534B15 /* libFDFullscreenPopGesture.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFDFullscreenPopGesture.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/FDFullscreenPopGesture/libFDFullscreenPopGesture.a"; sourceTree = "<group>"; };
-		F1A98CC21DC0CF5200534B15 /* libFMDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMDB.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/FMDB/libFMDB.a"; sourceTree = "<group>"; };
-		F1A98CC31DC0CF5200534B15 /* libHMSegmentedControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHMSegmentedControl.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/HMSegmentedControl/libHMSegmentedControl.a"; sourceTree = "<group>"; };
-		F1A98CC41DC0CF5200534B15 /* libJSQMessagesViewController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJSQMessagesViewController.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/JSQMessagesViewController/libJSQMessagesViewController.a"; sourceTree = "<group>"; };
-		F1A98CC51DC0CF5200534B15 /* libJSQSystemSoundPlayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJSQSystemSoundPlayer.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/JSQSystemSoundPlayer/libJSQSystemSoundPlayer.a"; sourceTree = "<group>"; };
-		F1A98CC61DC0CF5200534B15 /* libLFLiveKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLFLiveKit.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/LFLiveKit/libLFLiveKit.a"; sourceTree = "<group>"; };
-		F1A98CC71DC0CF5200534B15 /* libMasonry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMasonry.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/Masonry/libMasonry.a"; sourceTree = "<group>"; };
-		F1A98CC81DC0CF5200534B15 /* libMJRefresh.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMJRefresh.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/MJRefresh/libMJRefresh.a"; sourceTree = "<group>"; };
-		F1A98CC91DC0CF5200534B15 /* libRDVTabBarController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRDVTabBarController.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/RDVTabBarController/libRDVTabBarController.a"; sourceTree = "<group>"; };
-		F1A98CCA1DC0CF5200534B15 /* libRealReachability.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRealReachability.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/RealReachability/libRealReachability.a"; sourceTree = "<group>"; };
-		F1A98CCB1DC0CF5200534B15 /* libSDCycleScrollView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDCycleScrollView.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/SDCycleScrollView/libSDCycleScrollView.a"; sourceTree = "<group>"; };
-		F1A98CCC1DC0CF5200534B15 /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/SDWebImage/libSDWebImage.a"; sourceTree = "<group>"; };
-		F1A98CCD1DC0CF5200534B15 /* libSSZipArchive.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSSZipArchive.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/SSZipArchive/libSSZipArchive.a"; sourceTree = "<group>"; };
-		F1A98CCE1DC0CF5200534B15 /* libYYKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYYKit.a; path = "../Library/Developer/Xcode/DerivedData/MyTravel-bejypgwszopseagpftjecsnpduif/Build/Products/Debug-iphonesimulator/YYKit/libYYKit.a"; sourceTree = "<group>"; };
 		F1B0863E1CA2CDBF00A33285 /* YSQAllCityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQAllCityController.h; sourceTree = "<group>"; };
 		F1B0863F1CA2CDBF00A33285 /* YSQAllCityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSQAllCityController.m; sourceTree = "<group>"; };
 		F1B086411CA2CE1600A33285 /* YSQAllCityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSQAllCityCell.h; sourceTree = "<group>"; };
@@ -643,22 +649,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1A98CCF1DC0CF5200534B15 /* libAFNetworking.a in Frameworks */,
-				F1A98CD01DC0CF5200534B15 /* libCocoaAsyncSocket.a in Frameworks */,
-				F1A98CD11DC0CF5200534B15 /* libFDFullscreenPopGesture.a in Frameworks */,
-				F1A98CD21DC0CF5200534B15 /* libFMDB.a in Frameworks */,
-				F1A98CD31DC0CF5200534B15 /* libHMSegmentedControl.a in Frameworks */,
-				F1A98CD41DC0CF5200534B15 /* libJSQMessagesViewController.a in Frameworks */,
-				F1A98CD51DC0CF5200534B15 /* libJSQSystemSoundPlayer.a in Frameworks */,
-				F1A98CD61DC0CF5200534B15 /* libLFLiveKit.a in Frameworks */,
-				F1A98CD71DC0CF5200534B15 /* libMasonry.a in Frameworks */,
-				F1A98CD81DC0CF5200534B15 /* libMJRefresh.a in Frameworks */,
-				F1A98CD91DC0CF5200534B15 /* libRDVTabBarController.a in Frameworks */,
-				F1A98CDA1DC0CF5200534B15 /* libRealReachability.a in Frameworks */,
-				F1A98CDB1DC0CF5200534B15 /* libSDCycleScrollView.a in Frameworks */,
-				F1A98CDC1DC0CF5200534B15 /* libSDWebImage.a in Frameworks */,
-				F1A98CDD1DC0CF5200534B15 /* libSSZipArchive.a in Frameworks */,
-				F1A98CDE1DC0CF5200534B15 /* libYYKit.a in Frameworks */,
+				8BC122821DDE913B00A9106E /* libYYKit.a in Frameworks */,
+				8BC122801DDE913800A9106E /* libSSZipArchive.a in Frameworks */,
+				8BC1227E1DDE913400A9106E /* libSDWebImage.a in Frameworks */,
+				8BC1227C1DDE912F00A9106E /* libSDCycleScrollView.a in Frameworks */,
+				8BC1227A1DDE912B00A9106E /* libRealReachability.a in Frameworks */,
+				8BC122781DDE912700A9106E /* libRDVTabBarController.a in Frameworks */,
+				8BC122761DDE912400A9106E /* libMJRefresh.a in Frameworks */,
+				8BC122741DDE912000A9106E /* libMasonry.a in Frameworks */,
+				8BC122721DDE911D00A9106E /* libLFLiveKit.a in Frameworks */,
+				8BC122701DDE911A00A9106E /* libJSQSystemSoundPlayer.a in Frameworks */,
+				8BC1226E1DDE911600A9106E /* libJSQMessagesViewController.a in Frameworks */,
+				8BC1226C1DDE911300A9106E /* libHMSegmentedControl.a in Frameworks */,
+				8BC1226A1DDE910E00A9106E /* libFMDB.a in Frameworks */,
+				8BC122681DDE910B00A9106E /* libCocoaAsyncSocket.a in Frameworks */,
+				8BC122661DDE910700A9106E /* libAFNetworking.a in Frameworks */,
 				F1BEB58B1DA4D7F3007CB977 /* AudioToolbox.framework in Frameworks */,
 				F1BEB5891DA4D7ED007CB977 /* AVFoundation.framework in Frameworks */,
 				F1BEB5871DA4D7E6007CB977 /* CoreMedia.framework in Frameworks */,
@@ -697,22 +702,21 @@
 		2B471394C123A24B84ABFFAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F1A98CBF1DC0CF5200534B15 /* libAFNetworking.a */,
-				F1A98CC01DC0CF5200534B15 /* libCocoaAsyncSocket.a */,
-				F1A98CC11DC0CF5200534B15 /* libFDFullscreenPopGesture.a */,
-				F1A98CC21DC0CF5200534B15 /* libFMDB.a */,
-				F1A98CC31DC0CF5200534B15 /* libHMSegmentedControl.a */,
-				F1A98CC41DC0CF5200534B15 /* libJSQMessagesViewController.a */,
-				F1A98CC51DC0CF5200534B15 /* libJSQSystemSoundPlayer.a */,
-				F1A98CC61DC0CF5200534B15 /* libLFLiveKit.a */,
-				F1A98CC71DC0CF5200534B15 /* libMasonry.a */,
-				F1A98CC81DC0CF5200534B15 /* libMJRefresh.a */,
-				F1A98CC91DC0CF5200534B15 /* libRDVTabBarController.a */,
-				F1A98CCA1DC0CF5200534B15 /* libRealReachability.a */,
-				F1A98CCB1DC0CF5200534B15 /* libSDCycleScrollView.a */,
-				F1A98CCC1DC0CF5200534B15 /* libSDWebImage.a */,
-				F1A98CCD1DC0CF5200534B15 /* libSSZipArchive.a */,
-				F1A98CCE1DC0CF5200534B15 /* libYYKit.a */,
+				8BC122811DDE913B00A9106E /* libYYKit.a */,
+				8BC1227F1DDE913800A9106E /* libSSZipArchive.a */,
+				8BC1227D1DDE913400A9106E /* libSDWebImage.a */,
+				8BC1227B1DDE912F00A9106E /* libSDCycleScrollView.a */,
+				8BC122791DDE912B00A9106E /* libRealReachability.a */,
+				8BC122771DDE912700A9106E /* libRDVTabBarController.a */,
+				8BC122751DDE912400A9106E /* libMJRefresh.a */,
+				8BC122731DDE912000A9106E /* libMasonry.a */,
+				8BC122711DDE911D00A9106E /* libLFLiveKit.a */,
+				8BC1226F1DDE911A00A9106E /* libJSQSystemSoundPlayer.a */,
+				8BC1226D1DDE911600A9106E /* libJSQMessagesViewController.a */,
+				8BC1226B1DDE911300A9106E /* libHMSegmentedControl.a */,
+				8BC122691DDE910E00A9106E /* libFMDB.a */,
+				8BC122671DDE910B00A9106E /* libCocoaAsyncSocket.a */,
+				8BC122651DDE910700A9106E /* libAFNetworking.a */,
 				F1497DDF1DC0B95B00B0A256 /* Pods_MyTravel.framework */,
 				F1BEB58A1DA4D7F3007CB977 /* AudioToolbox.framework */,
 				F1BEB5881DA4D7ED007CB977 /* AVFoundation.framework */,
@@ -830,6 +834,8 @@
 				F145D9F41D7687BC0053DA8D /* NSString+SQAdd.m */,
 				F18E4AB41DA60E6100EFD4E9 /* UIImageView+YSQAdd.h */,
 				F18E4AB51DA60E6100EFD4E9 /* UIImageView+YSQAdd.m */,
+				8BC1225C1DDD9ABC00A9106E /* UIViewController+YSQAdd.h */,
+				8BC1225D1DDD9ABC00A9106E /* UIViewController+YSQAdd.m */,
 			);
 			name = categories;
 			path = MyTravel/categories;
@@ -886,6 +892,8 @@
 			children = (
 				F165A54B1C3D452B00B0AF69 /* YSQNavgationController.h */,
 				F165A54C1C3D452B00B0AF69 /* YSQNavgationController.m */,
+				8BC1225F1DDD9AFD00A9106E /* YSQBaseNavController.h */,
+				8BC122601DDD9AFD00A9106E /* YSQBaseNavController.m */,
 			);
 			name = Navigation;
 			path = MyTravel/Navigation;
@@ -1244,6 +1252,8 @@
 				F19408191C896CE100A9BDB3 /* FastCoder.m */,
 				F194081C1C896CE100A9BDB3 /* YSQLocationStore.h */,
 				F194081D1C896CE100A9BDB3 /* YSQLocationStore.m */,
+				8BC122621DDD9FA500A9106E /* ScreenShotView.h */,
+				8BC122631DDD9FA500A9106E /* ScreenShotView.m */,
 				F19408211C896D8500A9BDB3 /* NSObject+YSQStore.h */,
 				F19408221C896D8500A9BDB3 /* NSObject+YSQStore.m */,
 				F19593091C4FD77400DFDE31 /* YSQHelp.h */,
@@ -1531,12 +1541,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F168A9421C379C0300CBC9CA /* Build configuration list for PBXNativeTarget "MyTravel" */;
 			buildPhases = (
-				9DDAAD28BFF91F7A451333B7 /* Check Pods Manifest.lock */,
+				9DDAAD28BFF91F7A451333B7 /* [CP] Check Pods Manifest.lock */,
 				F168A9111C379C0300CBC9CA /* Sources */,
 				F168A9121C379C0300CBC9CA /* Frameworks */,
 				F168A9131C379C0300CBC9CA /* Resources */,
-				93EE3020D43BB0C166F3028B /* Embed Pods Frameworks */,
-				08D78B309E773A9E5146E9EF /* Copy Pods Resources */,
+				93EE3020D43BB0C166F3028B /* [CP] Embed Pods Frameworks */,
+				08D78B309E773A9E5146E9EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1679,14 +1689,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08D78B309E773A9E5146E9EF /* Copy Pods Resources */ = {
+		08D78B309E773A9E5146E9EF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1694,14 +1704,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTravel/Pods-MyTravel-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		93EE3020D43BB0C166F3028B /* Embed Pods Frameworks */ = {
+		93EE3020D43BB0C166F3028B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1709,19 +1719,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTravel/Pods-MyTravel-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9DDAAD28BFF91F7A451333B7 /* Check Pods Manifest.lock */ = {
+		9DDAAD28BFF91F7A451333B7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1841,7 +1851,9 @@
 				F168A91A1C379C0300CBC9CA /* main.m in Sources */,
 				F145DA1A1D76E2910053DA8D /* YSQMallDiscountHeaderCell.m in Sources */,
 				F189E2521CA4FE800036488B /* YSQTitleHeaderView.m in Sources */,
+				8BC122611DDD9AFD00A9106E /* YSQBaseNavController.m in Sources */,
 				F10DDA331D20BDB8003C30B6 /* YSQCityMapModel.m in Sources */,
+				8BC122641DDD9FA500A9106E /* ScreenShotView.m in Sources */,
 				F14E5FBA1C883ACB00C212B2 /* YSQLocationHeaderView.m in Sources */,
 				F1E2F1A61CC0BBED00374E55 /* YSQChooseTypeModel.m in Sources */,
 				F1454AF51C8BF9E0004B1C86 /* YSQHotelController.m in Sources */,
@@ -1882,6 +1894,7 @@
 				F145DA241D76E88D0053DA8D /* YSQMallGoodsCell.m in Sources */,
 				F1885B561CFD866F00ECF430 /* YSQUserDAO.m in Sources */,
 				F17F615B1D14E6AA00F71405 /* YSQSearchFriendsViewController.m in Sources */,
+				8BC1225E1DDD9ABC00A9106E /* UIViewController+YSQAdd.m in Sources */,
 				F1338E041C86789800D53A8E /* YSQGreatestChooseCell.m in Sources */,
 				F1A64DE51C86E29600E8C70D /* YSQPlayModel.m in Sources */,
 				F117435A1CBF50F70034447F /* YSQAllDiscountModel.m in Sources */,

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YSQBaseNavController.h"
 
-@interface YSQNavgationController : UINavigationController
+@interface YSQNavgationController :YSQBaseNavController
 
 @end

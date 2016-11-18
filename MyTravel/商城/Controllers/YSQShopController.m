@@ -31,20 +31,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    
-    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithTitle:@"看直播" style:UIBarButtonItemStylePlain target:self action:@selector(live)];
-    item.tintColor = [UIColor whiteColor];
-    self.navigationItem.rightBarButtonItem = item;
-    
-    UIBarButtonItem *left = [[UIBarButtonItem alloc]initWithTitle:@"开始直播" style:UIBarButtonItemStylePlain target:self action:@selector(startLive)];
-    left.tintColor = [UIColor whiteColor];
-    self.navigationItem.leftBarButtonItem = left;
-    
+    [self createUI];
     [self loadData];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,6 +50,21 @@
     [self.navigationController pushViewController:list animated:YES];
 }
 
+#pragma mark --UI 
+
+- (void)createUI {
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithTitle:@"看直播" style:UIBarButtonItemStylePlain target:self action:@selector(live)];
+    item.tintColor = [UIColor whiteColor];
+    self.navigationItem.rightBarButtonItem = item;
+    
+    UIBarButtonItem *left = [[UIBarButtonItem alloc]initWithTitle:@"开始直播" style:UIBarButtonItemStylePlain target:self action:@selector(startLive)];
+    left.tintColor = [UIColor whiteColor];
+    self.navigationItem.leftBarButtonItem = left;
+}
 
 #pragma mark --网络请求
 

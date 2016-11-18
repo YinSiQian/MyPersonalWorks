@@ -17,6 +17,7 @@
 #import "UMSocialWechatHandler.h"
 #import "FMDB.h"
 #import <AMapFoundationKit/AMapFoundationKit.h>
+#import "ScreenShotView.h"
 
 @interface AppDelegate ()
 @property (nonatomic, assign) NSInteger count;
@@ -37,6 +38,11 @@
     YSQTabBarController *ysq = [[YSQTabBarController alloc]init];
     [self.window setRootViewController:ysq];
     [self.window makeKeyAndVisible];
+    
+    //截屏View
+    self.shotView = [[ScreenShotView alloc] initWithFrame:CGRectMake(-self.window.frame.size.width, 0, self.window.frame.size.width, self.window.frame.size.height)];
+    [self.window insertSubview:_shotView atIndex:0];
+    self.shotView.hidden = YES;
     
     //创建数据库
     [self createDB];
@@ -66,6 +72,7 @@
                                                  name:kRealReachabilityChangedNotification
                                                object:nil];
     
+   //[self forbidScreenShot];
     return YES;
 }
 
@@ -73,6 +80,16 @@
     NSString *dbPath = [YSQHelp getDBPath];
     FMDatabase *db = [FMDatabase databaseWithPath:dbPath];
     [db open];    
+}
+
+- (void)forbidScreenShot {
+    NSOperationQueue *mainQueue = [NSOperationQueue mainQueue];
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationUserDidTakeScreenshotNotification object:nil queue:mainQueue usingBlock:^(NSNotification * _Nonnull note) {
+        UIAlertView *alter = [[UIAlertView alloc]initWithTitle:@"提示" message:@"为了安全起见,该App禁止使用截图功能" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        [alter show];
+    }];
+
 }
 
 - (void)networkChanged:(NSNotification *)notification

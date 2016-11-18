@@ -25,6 +25,7 @@
 #import "NetWorkManager.h"
 #import "SDCycleScrollView.h"
 #import "UIImageView+WebCache.m"
+#import "UIViewController+YSQAdd.h"
 #import "MJRefresh.h"
 #import "NSString+SQAdd.h"
 #import "YSQHelp.h"

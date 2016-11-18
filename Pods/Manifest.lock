@@ -14,15 +14,14 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
-  - AMap2DMap (4.3.0):
+  - AMap2DMap (4.4.0):
     - AMapFoundation (~> 1.2)
-  - AMapFoundation (1.3.1)
-  - AMapSearch (4.2.0):
-    - AMapFoundation (~> 1.0)
-  - CocoaAsyncSocket (7.5.0):
-    - CocoaAsyncSocket/GCD (= 7.5.0)
-  - CocoaAsyncSocket/GCD (7.5.0)
-  - FDFullscreenPopGesture (1.1)
+  - AMapFoundation (1.3.2)
+  - AMapSearch (4.4.0):
+    - AMapFoundation (~> 1.2)
+  - CocoaAsyncSocket (7.5.1):
+    - CocoaAsyncSocket/GCD (= 7.5.1)
+  - CocoaAsyncSocket/GCD (7.5.1)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
@@ -30,7 +29,7 @@ PODS:
   - JSQMessagesViewController (7.3.4):
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
-  - LFLiveKit (2.3)
+  - LFLiveKit (2.5)
   - Masonry (0.6.4)
   - MJRefresh (3.1.12)
   - RDVTabBarController (1.1.9)
@@ -55,7 +54,6 @@ DEPENDENCIES:
   - AMap2DMap
   - AMapSearch
   - CocoaAsyncSocket (~> 7.5.0)
-  - FDFullscreenPopGesture (= 1.1)
   - FMDB
   - HMSegmentedControl (~> 1.5.2)
   - JSQMessagesViewController (~> 7.3.4)
@@ -71,16 +69,15 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
-  AMap2DMap: f3f0fc5cdbf0242ff22da0c8605f24f8d7187b35
-  AMapFoundation: 636834a27cd003084f56b4232f3031e6a44c7e7e
-  AMapSearch: 788020fca7ed18819e8bc2bfca716a6775a05ada
-  CocoaAsyncSocket: 3baeb1ddd969f81cf9fca81053ae49ef2d1cbbfa
-  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  AMap2DMap: 5e310b546e93776462cf5a561cc74bafd6acee58
+  AMapFoundation: 843dc27b2c02bc0bc2ef3346bb3dd0456cf64dbb
+  AMapSearch: a6c7c83905dbe12aa059c7ff83cb0726cb4fc32f
+  CocoaAsyncSocket: e0a7e93b2ffa411592ff87e58524fbbc9b95b4fa
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
   JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
-  LFLiveKit: 76a5cb34509f8cbe25e3a95824cf80f36d36679b
+  LFLiveKit: 4361bd588ae0c9244589119ccdb1c30d14686414
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
@@ -91,6 +88,6 @@ SPEC CHECKSUMS:
   UMengSocialCOM: 074c135ce349aa4c8848d3fb8458757bcb6ffb67
   YYKit: 4c0dfcb4bb3205dfbb172e64ca57a50b1675d545
 
-PODFILE CHECKSUM: fa5362f3d0ecfdc1364c1789da59c7c899869195
+PODFILE CHECKSUM: 21eb0966d04007ab1060345709e22fd5d8536f3a
 
-COCOAPODS: 1.0.0.beta.4
+COCOAPODS: 1.1.1

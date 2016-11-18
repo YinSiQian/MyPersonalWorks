@@ -53,23 +53,24 @@
     [super pushViewController:viewController animated:animated];
 }
 
-- (UIViewController *)popViewControllerAnimated:(BOOL)animated {
-    return [self handlePopAction];
-}
-
 - (void)back {
-    [self handlePopAction];
+    [self popAction];
+    [super popViewControllerAnimated:YES];
 }
 
-- (UIViewController *)handlePopAction {
-    UIViewController *vc = [super popViewControllerAnimated:YES];
-    [vc.navigationController.navigationBar setShadowImage:nil];
+- (void)subClassHandlePopAction {
+    [self popAction];
+}
+
+- (void)popAction {
+    UIViewController *popView = self.viewControllers[self.viewControllers.count - 1];
+    [popView.navigationController.navigationBar setShadowImage:nil];
     if ([self.topViewController isKindOfClass:[RecomendViewController class]] || [self.topViewController isKindOfClass:[YSQBBSContentViewController class]] || [self.topViewController isKindOfClass:[YSQMineController class]] || [self.topViewController isKindOfClass:[DestinationViewController class]] || [self.topViewController isKindOfClass:[YSQShopController class]]) {
         NSDictionary *navbarTitleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
         self.navigationBar.titleTextAttributes = navbarTitleTextAttributes;
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     }
-    return vc;
+
 }
 
 @end
